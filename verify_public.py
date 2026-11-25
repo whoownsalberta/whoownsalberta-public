@@ -12,7 +12,9 @@ ARTICLE = re.compile(r"articles/[a-z][a-z0-9]*(?:-[a-z0-9]+)*\.html\Z")
 ROOT_FILES = {
     "README.md", "RELEASE_DISABLED", "verify_public.py",
     "tests/test_verify_public.py", ".github/workflows/verify.yml",
+    ".github/workflows/deploy-pages.yml",
 }
+HOLDING_SHA256 = "52e5943605d9b874a60bb11564d538090ab429be04b19c33572ea1571cf9b6e8"
 FIELDS = {
     "profile", "input_digests", "selection_digest", "review_digests",
     "output_digests",
@@ -62,7 +64,19 @@ def verify_site(site):
         fail("site/ requires manifest.json and index.html")
     manifest = json.loads((site / "manifest.json").read_text(encoding="utf-8"),
                           object_pairs_hook=unique_pairs)
-    if not isinstance(manifest, dict) or set(manifest) != FIELDS:
+    if not isinstance(manifest, dict):
+        fail("manifest: expected object")
+    if manifest.get("profile") == "holding-v1":
+        if set(manifest) != {"profile", "output_digests"}:
+            fail("holding manifest: unexpected fields")
+        if found != {"index.html", "manifest.json"}:
+            fail("holding site: unexpected files")
+        if manifest["output_digests"] != {"index.html": HOLDING_SHA256}:
+            fail("holding manifest: unexpected digest")
+        if hashlib.sha256((site / "index.html").read_bytes()).hexdigest() != HOLDING_SHA256:
+            fail("holding page: digest mismatch")
+        return
+    if set(manifest) != FIELDS:
         fail("manifest: unexpected fields")
     if manifest["profile"] != "public-v1":
         fail("manifest: unexpected profile")
