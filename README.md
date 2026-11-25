@@ -1,26 +1,25 @@
 # WhoOwnsAlberta public releases
 
-This repository is the public release boundary for WhoOwnsAlberta.info. It
-currently contains no published site. RELEASE_DISABLED records that state;
-GitHub Pages remains disabled.
+This repository is the public release boundary for WhoOwnsAlberta.info.
+GitHub Pages deploys only from protected main through the deploy-pages workflow.
+The public-artifact job checks every PR and is required for merging. Main
+requires an independent approving review.
 
-The private, offline builder produces a site/ directory with index.html,
-optional articles/<id>.html pages, and manifest.json. A release PR must copy
-only those generated files. Run python3 verify_public.py before opening the
-PR. The CI job named public-artifact performs the same check on every PR
-and on main.
+The first site is a holding page with no research claims. Its holding-v1
+manifest and exact HTML digest are pinned in verify_public.py. That profile
+permits only site/index.html and site/manifest.json. It does not imply approval
+of a research dataset or article. An independent reviewer must inspect the
+exact holding page before this release merges.
 
-The verifier checks the repository file allowlist, artifact paths, manifest
-shape, and SHA-256 digests. It cannot prove that the private source records or
-review decisions were valid. The independent reviewer must compare the PR's
-entire site/ tree with a build from the pinned private commit, verify the
-private decisions for those exact versions, and check that held, excluded,
-private, and synthetic material is absent. The PR must give the pinned private
-commit and SHA-256 of site/manifest.json; keep decision records and held-item
-identities in the private workspace.
+Later content releases must replace the holding page with the private offline
+builder's complete public-v1 site/ output. A public release PR must state the
+pinned private commit and SHA-256 of site/manifest.json. The reviewer must
+compare the entire proposed site/ tree against a build from that commit, verify
+the exact private review decisions, and check that held, excluded, private,
+and synthetic material is absent. Keep private decisions and held-item details
+in the private workspace.
 
-To propose the first release, remove RELEASE_DISABLED and add the complete
-generated site/ tree in one PR. Do not enable Pages or merge a release until
-the required CI check, independent review, dedicated release identity, and
-hosting configuration are ready. An approving review for infrastructure does
-not approve later content.
+Run python3 -m unittest discover -s tests and python3 verify_public.py before
+opening a PR. The verifier checks the public file allowlist, artifact paths,
+manifest shape, output set, and SHA-256 digests. It cannot make editorial or
+legal approval decisions. Changed output or dependencies need fresh review.

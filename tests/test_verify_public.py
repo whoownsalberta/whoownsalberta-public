@@ -63,5 +63,38 @@ class VerifySiteTests(unittest.TestCase):
             verify_site(self.site)
 
 
+class HoldingPageTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.site = Path(self.temp.name) / "site"
+        self.site.mkdir()
+        source = Path(__file__).resolve().parents[1] / "site" / "index.html"
+        (self.site / "index.html").write_bytes(source.read_bytes())
+        self.manifest = {
+            "profile": "holding-v1",
+            "output_digests": {"index.html": hashlib.sha256(source.read_bytes()).hexdigest()},
+        }
+        self.save()
+
+    def save(self):
+        (self.site / "manifest.json").write_text(json.dumps(self.manifest), encoding="utf-8")
+
+    def test_exact_holding_page(self):
+        verify_site(self.site)
+
+    def test_changed_holding_page_is_rejected(self):
+        (self.site / "index.html").write_text("changed", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "holding page: digest mismatch"):
+            verify_site(self.site)
+
+    def test_holding_page_cannot_contain_article(self):
+        articles = self.site / "articles"
+        articles.mkdir()
+        (articles / "draft.html").write_text("draft", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "holding site: unexpected files"):
+            verify_site(self.site)
+
+
 if __name__ == "__main__":
     unittest.main()
