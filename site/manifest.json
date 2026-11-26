@@ -2,11 +2,14 @@
   "decision_digests": {
     "factual:dynalife-community-lab-contract": "63180f25a93f8108a1f5be7dc9207c6e1f232553703ba9a8f05f79735711301c",
     "publication:dynalife-community-lab-contract": "8be4d3624d92bde595f85a08d4895a3125c9f5be3563e4c70bb29fd5a3a9c1cc",
-    "renderer:wiki-v1-renderer": "ed16d27b90b75258708d0459ea9a676a8e145fcdabf09f25d3014da146900d66"
+    "renderer:wiki-v1-renderer": "2197dee45a670fd9e281f6dad736118eb8f225f5b0946d48d1b91e09cd24dc9b"
   },
   "factual_digest": "081c8dc8b629fc337385abee2a42fdb8c042b79abce53d81a7d185451fbfe5c5",
   "mode": "public",
   "output_digests": {
+    "data/entries.csv": "b21d6c5125e440e35625f58d6c9f83d8cf60dc74d80477b849b86fe6c3c813be",
+    "data/sources.csv": "593a6908861a922f7de70969da7734bfa0715ee0d508e6f93a3dbb96ec34f01b",
+    "data/wiki.json": "9ce763a49000db67a86cc8866dd43f201a86d32825ef37ece2ad7430149ed3dd",
     "entries/dynalife-claim-acquisition-cash.html": "3f08f50651b8b9034f5832b0e91b579e6bf4daa9914d2435681f425ce0dce9e5",
     "entries/dynalife-claim-audit-access-dispute.html": "505eb93658baf8d39264c4659a434782e11c90720df3d844fa1c9949632eca7c",
     "entries/dynalife-claim-board-authority.html": "24c9d3cd04c298345fc64d7b35196bd917746d5a2d796e99ac683cc1620f1ff9",
@@ -17,7 +20,7 @@
     "entries/dynalife-claim-original-commitment.html": "051c232ecd30bd8c4503b079196417d0821418eb222ef9dba1a630782fe0b2b7",
     "entries/dynalife-claim-rfp-counteraccount.html": "d8fa6f2bd3221a3dd7d5ec4e832a53437f5cdb3916cd6d141367cc33574534ee",
     "entries/dynalife-lead-gross-payments-and-payees.html": "7ff25116f09c216e017fc53355df313889332a0c301c536c5ffb4f1cf31f36bb",
-    "index.html": "e34bf0c3410abd28f022a77ed8292fcf49b6ab33617f60de17aee97913c94e7f",
+    "index.html": "3f016117759cf15dfbbcab55a58b88fba7113be3c92c075b4c894a13adf7989b",
     "search.html": "1351f41b8f0a3dd818baa7794ccc4a634c66d4250d9e7c1cb35cc23e0b33f5a8",
     "sources/dynalife-source-ahs23.html": "9b1b09d42f9487033549181584998383710786686b82edba9e311d6bdf0e764e",
     "sources/dynalife-source-ahs24.html": "7f713de9a7b737f726d6f3f5b6246d23019d5f9da2faed00e3d97543743418b9",
@@ -32,6 +35,6 @@
   },
   "profile": "wiki-v1",
   "publication_digest": "fc27f368580bf5b87275cb98c0aba843e894301a17a0b73088bf467d54501190",
-  "renderer_digest": "a0f3c776543a0f980f45352b2362c9a1a41a64a0b835198930cfbc41b41f78c8",
+  "renderer_digest": "af7f60cd822518abf3a8838dbf2f7e9863ba18f177f274c56659cd4d7c734d63",
   "scope_id": "dynalife-community-lab-contract"
 }

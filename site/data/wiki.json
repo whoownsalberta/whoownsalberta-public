@@ -1,0 +1,415 @@
+{
+  "entries": [
+    {
+      "as_of": "2026-11-25T13:02:21Z",
+      "attribution": "Alberta Health Services audited 2023–24 annual report",
+      "citations": [
+        {
+          "locator": "printed p. 127, note 27",
+          "source_id": "dynalife-source-ahs24",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 127, note 27, row Cash purchase consideration paid ($31,500 thousand)",
+          "source_id": "dynalife-source-ahs24",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 127, note 27, row Net balances due from DLDX settled at acquisition ($16,295 thousand)",
+          "source_id": "dynalife-source-ahs24",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 94, consolidated cash-flow statement, capital transactions, ($29,388 thousand)",
+          "source_id": "dynalife-source-ahs24",
+          "stance": "supports"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "dynalife-claim-acquisition-cash",
+      "kind": "money_flow",
+      "next_check": null,
+      "research_state": "approved",
+      "summary": "AHS’s audited statements report $31.5 million cash purchase consideration for acquiring DynaLIFE operations on August 31, 2023, after settling $16.295 million in balances due from DynaLIFE. The same transaction appears as $29.388 million net cash outflow after cash acquired. The legal cash payee and owner-level distribution are unverified.",
+      "title": "$31.5 million disclosed cash purchase consideration ($29.388M net cash outflow)"
+    },
+    {
+      "as_of": "2026-11-25T13:02:21Z",
+      "attribution": "Auditor General of Alberta; Premier Danielle Smith in Hansard",
+      "citations": [
+        {
+          "locator": "printed p. 2, Access to Information Challenges",
+          "source_id": "dynalife-source-oag-2025",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 3, Scope Limitation",
+          "source_id": "dynalife-source-oag-2025",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed pp. 395–396, Oral Question Period, Premier Smith",
+          "source_id": "dynalife-source-hansard-2025",
+          "stance": "contextualizes"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "disputed",
+      "id": "dynalife-claim-audit-access-dispute",
+      "kind": "claim",
+      "next_check": null,
+      "research_state": "approved",
+      "summary": "The Auditor General said AHS restricted access to records with Department of Health support and that the impact of missing or redacted material was indeterminate. Premier Smith told the Assembly the government fully cooperated and disputed suggestions otherwise. The available records do not establish personal intent behind the access limits.",
+      "title": "Dispute over records access during the Auditor General examination"
+    },
+    {
+      "as_of": "2026-11-25T13:02:21Z",
+      "attribution": "AHS Board minutes; Auditor General of Alberta",
+      "citations": [
+        {
+          "locator": "PDF p. 3, Finance Committee item 2(a)",
+          "source_id": "dynalife-source-board-jan22",
+          "stance": "supports"
+        },
+        {
+          "locator": "PDF p. 4, Finance Committee item 2(a), resolution 3",
+          "source_id": "dynalife-source-board-jan22",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 15, Governance and Accountability",
+          "source_id": "dynalife-source-oag-2025",
+          "stance": "contextualizes"
+        },
+        {
+          "locator": "PDF p. 3, Finance Committee item 2(a), motion",
+          "source_id": "dynalife-source-board-jan22",
+          "stance": "supports"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "dynalife-claim-board-authority",
+      "kind": "claim",
+      "next_check": null,
+      "research_state": "approved",
+      "summary": "AHS’s board unanimously approved AHS and APL entering a DynaLIFE term sheet on January 27, 2022 and conditionally delegated CEO authority to execute a later services agreement if its final fundamental terms were not substantively different. The Auditor General separately reports board approval of the contract based on value. The final condition and signatories remain unverified.",
+      "title": "AHS board term-sheet approval and conditional CEO delegation"
+    },
+    {
+      "as_of": "2026-11-25T13:02:21Z",
+      "attribution": "Auditor General of Alberta",
+      "citations": [
+        {
+          "locator": "printed p. 18, Due Diligence",
+          "source_id": "dynalife-source-oag-2025",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 3, Scope Limitation",
+          "source_id": "dynalife-source-oag-2025",
+          "stance": "contextualizes"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "dynalife-claim-business-case",
+      "kind": "claim",
+      "next_check": null,
+      "research_state": "approved",
+      "summary": "The Auditor General found no evidence that AHS or Alberta Health developed a formal business case before initiating the procurement. This is an audit finding subject to the auditor’s stated indeterminate access limitation, not proof that no other analysis existed.",
+      "title": "Absence of a documented formal business case (OAG finding)"
+    },
+    {
+      "as_of": "2026-11-25T13:02:21Z",
+      "attribution": "Auditor General of Alberta",
+      "citations": [
+        {
+          "locator": "printed p. 35, Cost to Alberta Taxpayers",
+          "source_id": "dynalife-source-oag-2025",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed pp. 34–35, Cost to Alberta Taxpayers",
+          "source_id": "dynalife-source-oag-2025",
+          "stance": "supports"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "dynalife-claim-extra-cost",
+      "kind": "money_flow",
+      "next_check": null,
+      "research_state": "approved",
+      "summary": "The Auditor General estimated about $61 million in incremental cost against an estimated continuation of the prior service model over roughly eight months, plus $16 million to reintegrate services, producing $77 million for the 2019–23 initiative. These are audit-assessed additional costs, not gross payments to DynaLIFE.",
+      "title": "$77 million auditor-estimated extra cost for 2019–23 initiative"
+    },
+    {
+      "as_of": "2026-11-25T13:02:21Z",
+      "attribution": "AHS; Auditor General of Alberta; Premier Danielle Smith in Hansard",
+      "citations": [
+        {
+          "locator": "printed p. 127, note 27",
+          "source_id": "dynalife-source-ahs24",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 19, Due Diligence",
+          "source_id": "dynalife-source-oag-2025",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 397, Oral Question Period, Premier Smith",
+          "source_id": "dynalife-source-hansard-2025",
+          "stance": "supports"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "attributed_claim",
+      "id": "dynalife-claim-government-rationale",
+      "kind": "claim",
+      "next_check": null,
+      "research_state": "approved",
+      "summary": "AHS described improving service delivery as the purpose of bringing DynaLIFE operations under APL in 2023. The Auditor General reports that savings were the primary earlier objective of outsourcing. Premier Smith later said her government reversed course after seeing DynaLIFE could not manage provincewide service.",
+      "title": "AHS and Premier Smith rationale for outsourcing and reversal"
+    },
+    {
+      "as_of": "2026-11-25T13:02:21Z",
+      "attribution": "Auditor General of Alberta",
+      "citations": [
+        {
+          "locator": "printed p. 15, Governance and Accountability",
+          "source_id": "dynalife-source-oag-2025",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 15, Governance and Accountability",
+          "source_id": "dynalife-source-oag-2025",
+          "stance": "contextualizes"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "dynalife-claim-minister-direction",
+      "kind": "claim",
+      "next_check": null,
+      "research_state": "approved",
+      "summary": "The Auditor General found that the then health minister and Department of Health expected the 2019–22 community laboratory outsourcing to proceed, while AHS management and board were not the strategic decision-makers. This finding does not attribute initiation to Danielle Smith.",
+      "title": "Ministerial and department strategic direction (OAG finding)"
+    },
+    {
+      "as_of": "2026-11-25T13:02:21Z",
+      "attribution": "Alberta Health Services audited annual reports",
+      "citations": [
+        {
+          "locator": "printed p. 121, note 22(b)",
+          "source_id": "dynalife-source-ahs23",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 122, note 22(b)",
+          "source_id": "dynalife-source-ahs24",
+          "stance": "supports"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "dynalife-claim-original-commitment",
+      "kind": "money_flow",
+      "next_check": null,
+      "research_state": "approved",
+      "summary": "AHS reported executing the services and ancillary agreements on May 30, 2022, with an estimated $4.8 billion commitment over an initial 14 years and four months. The related commitment ended on August 31, 2023. This was a prospective contract estimate, not cash paid.",
+      "title": "$4.8 billion estimated initial commitment (cancelled August 31, 2023)"
+    },
+    {
+      "as_of": "2026-11-25T13:02:21Z",
+      "attribution": "Auditor General of Alberta",
+      "citations": [
+        {
+          "locator": "printed p. 20, Request for Proposal",
+          "source_id": "dynalife-source-oag-2025",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 21, Request for Proposal",
+          "source_id": "dynalife-source-oag-2025",
+          "stance": "supports"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "dynalife-claim-rfp-counteraccount",
+      "kind": "claim",
+      "next_check": null,
+      "research_state": "approved",
+      "summary": "The Auditor General found the written RFP met applicable document standards. After Sonic Healthcare withdrew citing pandemic travel restrictions, an independent procurement adviser said AHS could negotiate with the remaining qualified proponent. This did not resolve the auditor’s separate concerns about proceeding with one bidder.",
+      "title": "Written RFP met standards; Sonic withdrew citing pandemic travel limits"
+    },
+    {
+      "as_of": "2026-11-25T13:02:21Z",
+      "attribution": "Auditor General of Alberta; AHS audited 2023–24 financial statements",
+      "citations": [
+        {
+          "locator": "printed pp. 34–35, Cost to Alberta Taxpayers",
+          "source_id": "dynalife-source-oag-2025",
+          "stance": "contextualizes"
+        },
+        {
+          "locator": "printed p. 127, note 27, row Cash purchase consideration paid ($31,500 thousand)",
+          "source_id": "dynalife-source-ahs24",
+          "stance": "contextualizes"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "unverified",
+      "id": "dynalife-lead-gross-payments-and-payees",
+      "kind": "lead",
+      "next_check": "Obtain executed 2022 agreement and amendments, AHS/APL service-payment remittance ledger, acquisition closing reconciliation, and certified Alberta Corporate Registry partnership searches.",
+      "research_state": "held",
+      "summary": "Public financial statements and the Auditor General examination do not disclose total gross service payments to DynaLIFE under the expanded 2022 agreement, the executed contract text or board-condition check, or the legal cash payee and owner-level distribution of the $31.5 million acquisition consideration.",
+      "title": "Gross service payments, contract terms, and owner-level proceeds remain unverified"
+    }
+  ],
+  "mode": "public",
+  "pages": [
+    {
+      "blocks": [
+        {
+          "entry_ids": [
+            "dynalife-claim-minister-direction",
+            "dynalife-claim-business-case",
+            "dynalife-claim-board-authority"
+          ],
+          "heading": "Direction, business case, and board delegation",
+          "text": "Primary records distinguish ministerial strategic direction, the auditor's finding on the absence of a formal business case, and the AHS board's January 27, 2022 term-sheet approval and conditional CEO delegation."
+        },
+        {
+          "entry_ids": [
+            "dynalife-claim-audit-access-dispute",
+            "dynalife-claim-rfp-counteraccount",
+            "dynalife-claim-government-rationale"
+          ],
+          "heading": "Audit access dispute and counteraccount",
+          "text": "The Auditor General reported restricted access to records with indeterminate impact on findings; Premier Danielle Smith told the Assembly the government cooperated fully."
+        }
+      ],
+      "id": "dynalife-decision-and-oversight",
+      "summary": "Who directed policy, how AHS's board approved the term sheet, and the dispute over audit records access.",
+      "title": "Decision authority, business case, and audit access"
+    },
+    {
+      "blocks": [
+        {
+          "entry_ids": [
+            "dynalife-claim-original-commitment",
+            "dynalife-claim-extra-cost",
+            "dynalife-claim-acquisition-cash"
+          ],
+          "heading": "Disclosed public-record amounts",
+          "text": "Each figure below stays on its source basis. Do not combine prospective contract commitments, counterfactual cost estimates, and asset-acquisition cash into a single purported loss."
+        }
+      ],
+      "id": "dynalife-money-trail",
+      "summary": "Separate accounting bases for the $4.8B commitment, $77M extra-cost estimate, and $31.5M acquisition cash.",
+      "title": "Money trail — commitment, audit cost estimate, and acquisition cash"
+    },
+    {
+      "blocks": [
+        {
+          "entry_ids": [
+            "dynalife-lead-gross-payments-and-payees"
+          ],
+          "heading": "Unverified payments, contract terms, and ownership proceeds",
+          "text": "Gross service payments, the executed contract text, and owner-level distributions of acquisition cash remain unknown in the verified public record."
+        }
+      ],
+      "id": "dynalife-open-questions",
+      "summary": "What the published audit and financial statements do not resolve, and which records are needed next.",
+      "title": "Open questions and missing records"
+    },
+    {
+      "blocks": [
+        {
+          "entry_ids": [
+            "dynalife-claim-minister-direction",
+            "dynalife-claim-rfp-counteraccount",
+            "dynalife-claim-government-rationale"
+          ],
+          "heading": "Decision and countercontext",
+          "text": "The Auditor General examined how Alberta Health and AHS proceeded with expanded community laboratory outsourcing between 2019 and 2023, alongside the compliant written RFP finding and government rationale."
+        },
+        {
+          "entry_ids": [
+            "dynalife-claim-original-commitment",
+            "dynalife-claim-extra-cost",
+            "dynalife-claim-acquisition-cash"
+          ],
+          "heading": "Separate money measures",
+          "text": "Public records report three distinct financial measures that answer different questions and must not be summed: a cancelled $4.8 billion prospective commitment, $77 million in auditor-estimated extra costs, and $31.5 million in disclosed cash purchase consideration."
+        }
+      ],
+      "id": "dynalife-overview",
+      "summary": "Public-record overview of how Alberta directed, contracted, and reversed expanded community lab outsourcing.",
+      "title": "DynaLIFE community lab contract — overview"
+    }
+  ],
+  "profile": "wiki-v1",
+  "scope": {
+    "coverage": "Public-record slice of Alberta's 2019–23 DynaLIFE community laboratory contract from the November 2025 Auditor General examination, AHS audited FY 2022–23 and 2023–24 financial statements, January 27, 2022 public AHS board minutes, and November 20, 2025 Alberta Hansard. Former-vendor operational claims remain privately held pending outreach.",
+    "id": "dynalife-community-lab-contract",
+    "research_as_of": "2026-11-25T13:02:21Z"
+  },
+  "sources": [
+    {
+      "accessed_at": "2026-11-25T13:02:21Z",
+      "id": "dynalife-source-ahs23",
+      "published_at": null,
+      "publisher": "Alberta Health Services",
+      "source_type": "financial_disclosure",
+      "source_version": "sha256:a01694d9c5a768ceb3e7b8859483988123b284c1b1fed3050dd8705d0f56b857",
+      "title": "2022–23 Alberta Health Services Annual Report",
+      "url": "https://www.albertahealthservices.ca/assets/about/publications/ahs-pub-pr-2022-23-q4.pdf"
+    },
+    {
+      "accessed_at": "2026-11-25T13:02:21Z",
+      "id": "dynalife-source-ahs24",
+      "published_at": null,
+      "publisher": "Alberta Health Services",
+      "source_type": "financial_disclosure",
+      "source_version": "sha256:0fd6a5ce9a686148efba5d8c067466b4dc822d277960c6a8929eb3ef07fe130a",
+      "title": "2023–24 Alberta Health Services Annual Report",
+      "url": "https://www.albertahealthservices.ca/assets/about/publications/ahs-pub-pr-2023-24-q4.pdf"
+    },
+    {
+      "accessed_at": "2026-11-25T13:02:21Z",
+      "id": "dynalife-source-board-jan22",
+      "published_at": null,
+      "publisher": "Alberta Health Services Board",
+      "source_type": "official_record",
+      "source_version": "sha256:ebb9d30c0af5a3247deb4eb5304c9058448a7fdf8628cc5304eaf99a58ed236a",
+      "title": "AHS Board minutes, January 27, 2022",
+      "url": "https://www.albertahealthservices.ca/assets/about/board/ahs-brd-2022-01-27-minutes.pdf"
+    },
+    {
+      "accessed_at": "2026-11-25T13:02:21Z",
+      "id": "dynalife-source-hansard-2025",
+      "published_at": null,
+      "publisher": "Legislative Assembly of Alberta",
+      "source_type": "official_record",
+      "source_version": "sha256:f9ec13a6ef617175891239d1d87e5d32da910f937a46ba48456fe948a0128e38",
+      "title": "Alberta Hansard, November 20, 2025, afternoon sitting",
+      "url": "https://docs.assembly.ab.ca/LADDAR_files/docs/hansards/han/legislature_31/session_2/20251120_1330_01_han.pdf"
+    },
+    {
+      "accessed_at": "2026-11-25T13:02:21Z",
+      "id": "dynalife-source-oag-2025",
+      "published_at": "2025-11-19",
+      "publisher": "Office of the Auditor General of Alberta",
+      "source_type": "official_record",
+      "source_version": "sha256:2b1f5bb4b097eca0239dff2c6e5f31fd345aed46d2f0d84af641050677f662af",
+      "title": "An Examination of Community Laboratory Services (Contract with DynaLIFE)",
+      "url": "https://www.oag.ab.ca/wp-content/uploads/2025/11/2025-An-Examination-of-Community-Lab-ServicesContract-with-DynaLIFE.pdf"
+    }
+  ]
+}
