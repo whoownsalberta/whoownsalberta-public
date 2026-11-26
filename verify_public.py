@@ -11,13 +11,19 @@ ID = re.compile(r"[a-z][a-z0-9]*(?:-[a-z0-9]+)*\Z")
 HEX = re.compile(r"[0-9a-f]{64}\Z")
 ARTICLE = re.compile(r"articles/[a-z][a-z0-9]*(?:-[a-z0-9]+)*\.html\Z")
 WIKI_FILE = re.compile(
-    r"(?:index|search)\.html\Z|style\.css\Z|(?:topics|entries|sources)/[a-z][a-z0-9]*(?:-[a-z0-9]+)*\.html\Z"
+    r"(?:index|search)\.html\Z|style\.css\Z|"
+    r"data/(?:wiki\.json|entries\.csv|sources\.csv)\Z|"
+    r"(?:topics|entries|sources)/[a-z][a-z0-9]*(?:-[a-z0-9]+)*\.html\Z"
 )
-WIKI_DIRS = {"topics", "entries", "sources"}
+WIKI_DIRS = {"topics", "entries", "sources", "data"}
 ROOT_FILES = {
-    "README.md", "RELEASE_DISABLED", "verify_public.py",
+    "README.md", "CONTRIBUTING.md", "RELEASE_DISABLED", "verify_public.py",
     "tests/test_verify_public.py", ".github/workflows/verify.yml",
     ".github/workflows/deploy-pages.yml",
+    ".github/ISSUE_TEMPLATE/config.yml",
+    ".github/ISSUE_TEMPLATE/correction.yml",
+    ".github/ISSUE_TEMPLATE/primary-source-tip.yml",
+    ".github/ISSUE_TEMPLATE/dataset-importer.yml",
 }
 HOLDING_SHA256 = "52e5943605d9b874a60bb11564d538090ab429be04b19c33572ea1571cf9b6e8"
 PUBLIC_V1_FIELDS = {
