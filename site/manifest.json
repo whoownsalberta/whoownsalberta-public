@@ -1,6 +1,37 @@
 {
-  "output_digests": {
-    "index.html": "52e5943605d9b874a60bb11564d538090ab429be04b19c33572ea1571cf9b6e8"
+  "decision_digests": {
+    "factual:dynalife-community-lab-contract": "63180f25a93f8108a1f5be7dc9207c6e1f232553703ba9a8f05f79735711301c",
+    "publication:dynalife-community-lab-contract": "8be4d3624d92bde595f85a08d4895a3125c9f5be3563e4c70bb29fd5a3a9c1cc",
+    "renderer:wiki-v1-renderer": "ed16d27b90b75258708d0459ea9a676a8e145fcdabf09f25d3014da146900d66"
   },
-  "profile": "holding-v1"
+  "factual_digest": "081c8dc8b629fc337385abee2a42fdb8c042b79abce53d81a7d185451fbfe5c5",
+  "mode": "public",
+  "output_digests": {
+    "entries/dynalife-claim-acquisition-cash.html": "3f08f50651b8b9034f5832b0e91b579e6bf4daa9914d2435681f425ce0dce9e5",
+    "entries/dynalife-claim-audit-access-dispute.html": "505eb93658baf8d39264c4659a434782e11c90720df3d844fa1c9949632eca7c",
+    "entries/dynalife-claim-board-authority.html": "24c9d3cd04c298345fc64d7b35196bd917746d5a2d796e99ac683cc1620f1ff9",
+    "entries/dynalife-claim-business-case.html": "effa04593d35c4b37224f63f0b8eaebe30ab2261ad98eef884979eb060f796d8",
+    "entries/dynalife-claim-extra-cost.html": "dbaac84d86e554db3e09814123bc583625fa35fd5dc11fa7ee82f3483f19b312",
+    "entries/dynalife-claim-government-rationale.html": "4d949353b682f6ec1417d8c44d569170039ed08b2134be7fb075ed925d7fbd64",
+    "entries/dynalife-claim-minister-direction.html": "2c6576838336744333ff8ed4af9ad557c1f1a866d7ba7b27fc5a6615aaafc80c",
+    "entries/dynalife-claim-original-commitment.html": "051c232ecd30bd8c4503b079196417d0821418eb222ef9dba1a630782fe0b2b7",
+    "entries/dynalife-claim-rfp-counteraccount.html": "d8fa6f2bd3221a3dd7d5ec4e832a53437f5cdb3916cd6d141367cc33574534ee",
+    "entries/dynalife-lead-gross-payments-and-payees.html": "7ff25116f09c216e017fc53355df313889332a0c301c536c5ffb4f1cf31f36bb",
+    "index.html": "e34bf0c3410abd28f022a77ed8292fcf49b6ab33617f60de17aee97913c94e7f",
+    "search.html": "1351f41b8f0a3dd818baa7794ccc4a634c66d4250d9e7c1cb35cc23e0b33f5a8",
+    "sources/dynalife-source-ahs23.html": "9b1b09d42f9487033549181584998383710786686b82edba9e311d6bdf0e764e",
+    "sources/dynalife-source-ahs24.html": "7f713de9a7b737f726d6f3f5b6246d23019d5f9da2faed00e3d97543743418b9",
+    "sources/dynalife-source-board-jan22.html": "5bc997461acf96cd3f9761ccb87411c9f85d49ac0d5344bc22984100c1510e94",
+    "sources/dynalife-source-hansard-2025.html": "dbcce0a9b4adac2256c48eeab0429d35074d0bceec51f23385c760d3a6d93af9",
+    "sources/dynalife-source-oag-2025.html": "4b208df1864a2492204019c184ef65553299d4b4090b8afe8a9d93c64c98403a",
+    "style.css": "f794727dd74de43d2c3ffd5a4341c7ec36831208487fa87fe63bc9ef573707d0",
+    "topics/dynalife-decision-and-oversight.html": "fb44cb2982c696b643c2deebc1bc705ab07491f23e8fded1c5d571077421011c",
+    "topics/dynalife-money-trail.html": "c8d0629ce36e939734a35a85f6ab3905ff412dab0d345bd29a1b6e59eb434e9a",
+    "topics/dynalife-open-questions.html": "e7e46fc2e2be26bdf3d2ced09302d3963c5775bc3feef3ad5c7bf932dc71e53e",
+    "topics/dynalife-overview.html": "2f8e2d9d5306b2341d2cd345792a533250b56d77f89a295eb91fd8a30fe9f060"
+  },
+  "profile": "wiki-v1",
+  "publication_digest": "fc27f368580bf5b87275cb98c0aba843e894301a17a0b73088bf467d54501190",
+  "renderer_digest": "a0f3c776543a0f980f45352b2362c9a1a41a64a0b835198930cfbc41b41f78c8",
+  "scope_id": "dynalife-community-lab-contract"
 }
