@@ -96,5 +96,94 @@ class HoldingPageTests(unittest.TestCase):
             verify_site(self.site)
 
 
+class WikiSiteTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.site = Path(self.temp.name) / "site"
+        self.site.mkdir()
+        for name in ("index.html", "search.html", "topics/topic-example.html",
+                     "entries/entry-example.html", "sources/source-example.html"):
+            path = self.site / name
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(f"<h1>Fictional {name}</h1>", encoding="utf-8")
+        self.manifest = {
+            "profile": "wiki-v1", "scope_digest": SHA, "inventory_digest": SHA,
+            "renderer_digest": SHA, "factual_review_digest": SHA,
+            "decision_digests": {"scope": SHA, "source:source-example": SHA,
+                                 "entry:entry-example": SHA, "page:topic-example": SHA},
+            "output_digests": {str(path.relative_to(self.site)): hashlib.sha256(path.read_bytes()).hexdigest()
+                               for path in self.site.rglob("*.html")},
+        }
+        self.save()
+
+    def save(self):
+        (self.site / "manifest.json").write_text(json.dumps(self.manifest), encoding="utf-8")
+
+    def test_matching_wiki_artifact(self):
+        verify_site(self.site)
+
+    def test_missing_search_is_rejected(self):
+        (self.site / "search.html").unlink()
+        self.manifest["output_digests"].pop("search.html")
+        self.save()
+        with self.assertRaisesRegex(ValueError, "unexpected output paths"):
+            verify_site(self.site)
+
+    def test_article_in_wiki_manifest_is_rejected(self):
+        path = self.site / "articles/other.html"
+        path.parent.mkdir()
+        path.write_text("fictional")
+        self.manifest["output_digests"]["articles/other.html"] = hashlib.sha256(path.read_bytes()).hexdigest()
+        self.save()
+        with self.assertRaisesRegex(ValueError, "unexpected output paths"):
+            verify_site(self.site)
+
+    def test_private_file_and_stale_digest_are_rejected(self):
+        (self.site / "private.json").write_text("{}")
+        with self.assertRaisesRegex(ValueError, "unlisted public file"):
+            verify_site(self.site)
+        (self.site / "private.json").unlink()
+        (self.site / "entries/entry-example.html").write_text("changed")
+        with self.assertRaisesRegex(ValueError, "digest mismatch"):
+            verify_site(self.site)
+
+    def test_missing_display_decision_digest_is_rejected(self):
+        self.manifest["decision_digests"].pop("entry:entry-example")
+        self.save()
+        with self.assertRaisesRegex(ValueError, "decision keys do not match"):
+            verify_site(self.site)
+
+    def test_missing_source_and_extra_entry_decisions_are_rejected(self):
+        self.manifest["decision_digests"].pop("source:source-example")
+        self.save()
+        with self.assertRaisesRegex(ValueError, "decision keys do not match"):
+            verify_site(self.site)
+        self.manifest["decision_digests"]["source:source-example"] = SHA
+        extra = self.site / "entries/entry-extra.html"
+        extra.write_text("fictional")
+        self.manifest["output_digests"]["entries/entry-extra.html"] = hashlib.sha256(extra.read_bytes()).hexdigest()
+        self.save()
+        with self.assertRaisesRegex(ValueError, "decision keys do not match"):
+            verify_site(self.site)
+
+    def test_unknown_and_duplicate_scope_decision_keys_are_rejected(self):
+        self.manifest["decision_digests"]["unknown:entry-example"] = SHA
+        self.save()
+        with self.assertRaisesRegex(ValueError, "decision keys do not match"):
+            verify_site(self.site)
+        self.manifest["decision_digests"].pop("unknown:entry-example")
+        self.manifest["decision_digests"]["scope:another"] = SHA
+        self.save()
+        with self.assertRaisesRegex(ValueError, "decision keys do not match"):
+            verify_site(self.site)
+
+    def test_private_factual_target_key_is_rejected(self):
+        self.manifest["decision_digests"]["factual:research/private/secret.json#person"] = SHA
+        self.save()
+        with self.assertRaisesRegex(ValueError, "decision keys do not match"):
+            verify_site(self.site)
+
+
 if __name__ == "__main__":
     unittest.main()
