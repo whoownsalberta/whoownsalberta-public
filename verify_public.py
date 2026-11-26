@@ -9,6 +9,7 @@ from pathlib import Path
 
 HEX = re.compile(r"[0-9a-f]{64}\Z")
 ARTICLE = re.compile(r"articles/[a-z][a-z0-9]*(?:-[a-z0-9]+)*\.html\Z")
+WIKI = re.compile(r"(?:topics|entries|sources)/[a-z][a-z0-9]*(?:-[a-z0-9]+)*\.html\Z")
 ROOT_FILES = {
     "README.md", "RELEASE_DISABLED", "verify_public.py",
     "tests/test_verify_public.py", ".github/workflows/verify.yml",
@@ -19,6 +20,8 @@ FIELDS = {
     "profile", "input_digests", "selection_digest", "review_digests",
     "output_digests",
 }
+WIKI_FIELDS = {"profile", "scope_digest", "inventory_digest", "renderer_digest",
+               "decision_digests", "factual_review_digest", "output_digests"}
 
 
 def fail(message):
@@ -43,7 +46,7 @@ def digest_map(value, label):
 
 
 def permitted_output(path):
-    return path == "index.html" or bool(ARTICLE.fullmatch(path))
+    return path in {"index.html", "search.html"} or bool(ARTICLE.fullmatch(path) or WIKI.fullmatch(path))
 
 
 def verify_site(site):
@@ -76,6 +79,37 @@ def verify_site(site):
         if hashlib.sha256((site / "index.html").read_bytes()).hexdigest() != HOLDING_SHA256:
             fail("holding page: digest mismatch")
         return
+    if manifest.get("profile") == "wiki-v1":
+        if set(manifest) != WIKI_FIELDS:
+            fail("wiki manifest: unexpected fields")
+        for key in ("scope_digest", "inventory_digest", "renderer_digest", "factual_review_digest"):
+            if not isinstance(manifest[key], str) or not HEX.fullmatch(manifest[key]):
+                fail(f"wiki manifest: invalid {key}")
+        digest_map(manifest["decision_digests"], "decision_digests")
+        outputs = manifest["output_digests"]
+        digest_map(outputs, "output_digests")
+        if (not {"index.html", "search.html"} <= outputs.keys() or
+                not any(name.startswith("topics/") for name in outputs) or
+                not any(name.startswith("entries/") for name in outputs) or
+                any(name not in {"index.html", "search.html"} and not WIKI.fullmatch(name)
+                    for name in outputs)):
+            fail("wiki manifest: unexpected output paths")
+        decisions = set(manifest["decision_digests"])
+        source_keys = {key for key in decisions if key.startswith("source:")}
+        entry_keys = {key for key in decisions if key.startswith("entry:")}
+        page_keys = {key for key in decisions if key.startswith("page:")}
+        expected_sources = {"source:" + name.removeprefix("sources/").removesuffix(".html")
+                            for name in outputs if name.startswith("sources/")}
+        expected_entries = {"entry:" + name.removeprefix("entries/").removesuffix(".html")
+                            for name in outputs if name.startswith("entries/")}
+        expected_pages = {"page:" + name.removeprefix("topics/").removesuffix(".html")
+                          for name in outputs if name.startswith("topics/")}
+        if ("scope" not in decisions or source_keys != expected_sources or
+                entry_keys != expected_entries or page_keys != expected_pages or
+                decisions != {"scope"} | source_keys | entry_keys | page_keys):
+            fail("wiki manifest: decision keys do not match output pages")
+        verify_outputs(site, found, outputs)
+        return
     if set(manifest) != FIELDS:
         fail("manifest: unexpected fields")
     if manifest["profile"] != "public-v1":
@@ -90,6 +124,12 @@ def verify_site(site):
     if not isinstance(manifest["selection_digest"], str) or not HEX.fullmatch(manifest["selection_digest"]):
         fail("selection_digest: invalid SHA-256 digest")
     outputs = manifest["output_digests"]
+    if any(name != "index.html" and not ARTICLE.fullmatch(name) for name in outputs):
+        fail("public-v1 manifest: unexpected output paths")
+    verify_outputs(site, found, outputs)
+
+
+def verify_outputs(site, found, outputs):
     if set(outputs) != found - {"manifest.json"}:
         fail("manifest: output file set differs from site/")
     for name, expected in outputs.items():
