@@ -13,9 +13,9 @@ ARTICLE = re.compile(r"articles/[a-z][a-z0-9]*(?:-[a-z0-9]+)*\.html\Z")
 WIKI_FILE = re.compile(
     r"(?:index|search)\.html\Z|style\.css\Z|"
     r"data/(?:wiki\.json|entries\.csv|sources\.csv)\Z|"
-    r"(?:topics|entries|sources)/[a-z][a-z0-9]*(?:-[a-z0-9]+)*\.html\Z"
+    r"(?:articles|topics|entries|sources)/[a-z][a-z0-9]*(?:-[a-z0-9]+)*\.html\Z"
 )
-WIKI_DIRS = {"topics", "entries", "sources", "data"}
+WIKI_DIRS = {"articles", "topics", "entries", "sources", "data"}
 ROOT_FILES = {
     "README.md", "CONTRIBUTING.md", "RELEASE_DISABLED", "verify_public.py",
     "tests/test_verify_public.py", ".github/workflows/verify.yml",

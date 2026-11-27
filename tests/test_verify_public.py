@@ -82,6 +82,36 @@ class WikiV1SiteTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "forbidden preview/synthetic marker"):
             verify_site(self.site)
 
+    def test_wiki_v1_with_story_first_articles(self):
+        articles_dir = self.site / "articles"
+        articles_dir.mkdir()
+        # Empty articles/ directory is rejected
+        with self.assertRaisesRegex(ValueError, "unexpected empty directory"):
+            verify_site(self.site)
+
+        art_path = articles_dir / "example-feature.html"
+        art_path.write_text("<article><h1>Investigation</h1></article>", encoding="utf-8")
+        self.manifest["output_digests"]["articles/example-feature.html"] = hashlib.sha256(
+            art_path.read_bytes()
+        ).hexdigest()
+        self.save()
+        verify_site(self.site)
+
+        # Non-HTML file inside articles/ is rejected
+        (articles_dir / "draft.md").write_text("# Private draft", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "unlisted public file"):
+            verify_site(self.site)
+        (articles_dir / "draft.md").unlink()
+
+        # Preview marker inside article HTML is rejected
+        art_path.write_text("<div>PRIVATE PREVIEW — NOT FOR PUBLICATION</div>", encoding="utf-8")
+        self.manifest["output_digests"]["articles/example-feature.html"] = hashlib.sha256(
+            art_path.read_bytes()
+        ).hexdigest()
+        self.save()
+        with self.assertRaisesRegex(ValueError, "forbidden preview/synthetic marker"):
+            verify_site(self.site)
+
     def test_preview_mode_is_rejected(self):
         self.manifest["mode"] = "preview"
         self.save()
