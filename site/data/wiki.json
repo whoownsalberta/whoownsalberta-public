@@ -383,6 +383,54 @@
     "id": "dynalife-community-lab-contract",
     "research_as_of": "2026-11-25T13:02:21Z"
   },
+  "share_kits": [
+    {
+      "article_id": "dynalife-lab-privatization",
+      "cited_entry_ids": [
+        "dynalife-claim-minister-direction",
+        "dynalife-claim-business-case",
+        "dynalife-claim-board-authority",
+        "dynalife-claim-original-commitment",
+        "dynalife-claim-extra-cost",
+        "dynalife-claim-acquisition-cash",
+        "dynalife-claim-rfp-counteraccount",
+        "dynalife-claim-government-rationale",
+        "dynalife-claim-audit-access-dispute",
+        "dynalife-lead-gross-payments-and-payees"
+      ],
+      "id": "dynalife-facebook-kit",
+      "images": [
+        {
+          "alt": "Dark charcoal editorial magazine cover titled Alberta's DynaLIFE Playbook — File #01: No documented business case. One bidder. A $31.5M buyback. Satirical illustration shows a brass seesaw on a glowing teal medical-cross fulcrum slammed down by chained, redacted, crimson-bowed contract folders with a cracked smoking piggy bank, launching a rack of blood-sample test tubes and a crumpled napkin into the air.",
+          "filename": "01-dynalife-comic-cover.png",
+          "label": "Cover: Alberta's DynaLIFE Playbook (File #01)"
+        },
+        {
+          "alt": "Editorial comic panel 1 of 4 titled Step 1: Skip the Homework. A smiling cartoon official throws blank pages out a boardroom window while pointing to a crumpled napkin as a stunned analyst searches the empty table with a magnifying glass. Caption notes the Auditor General found no documented formal business case from AHS or Alberta Health before procurement began.",
+          "filename": "02-dynalife-comic-panel-1.png",
+          "label": "Panel 1/4: Step 1 — Skip the Homework"
+        },
+        {
+          "alt": "Editorial comic panel 2 of 4 titled Step 2: The One-Bidder Auction. A rival bidder dashes out an exit door with a suitcase while one lone corporate bidder lounges with feet up holding an auction paddle as an auctioneer bangs a gavel beside a tray of glass lab test tubes. Caption notes Sonic Healthcare exited over pandemic travel curbs, leaving one bidder for a $4.8B prospective commitment.",
+          "filename": "03-dynalife-comic-panel-2.png",
+          "label": "Panel 2/4: Step 2 — The One-Bidder Auction"
+        },
+        {
+          "alt": "Editorial comic panel 3 of 4 titled Step 3: Pay to Buy It Back. An exhausted health official hands a giant ribboned envelope across a counter for a wooden crate of lab test tubes while a tipped piggy bank smokes behind him. Caption separates the Auditor General's $77M extra-cost estimate from AHS's $31.5M buyout cash paid.",
+          "filename": "04-dynalife-comic-panel-3.png",
+          "label": "Panel 3/4: Step 3 — Pay to Buy It Back"
+        },
+        {
+          "alt": "Editorial comic panel 4 of 4 titled Step 4: Full Cooperation. A bewildered auditor examines a chained, redacted filing cabinet with a magnifying glass while a cheerful official gives a thumbs-up leaning on a broom beside a lumpy rug hiding folders. Caption cites the Auditor General's restricted-access finding alongside Premier Smith's Hansard statement that the government cooperated fully.",
+          "filename": "05-dynalife-comic-panel-4.png",
+          "label": "Panel 4/4: Step 4 — Full Cooperation"
+        }
+      ],
+      "platform": "facebook",
+      "summary": "Download the 5 verified 1080×1080 satirical comic panels and copy the ready-to-post Facebook caption and First Comment so you can share the primary receipts in 60 seconds.",
+      "title": "Share DynaLIFE on Facebook — 5-Panel Comic Kit"
+    }
+  ],
   "sources": [
     {
       "accessed_at": "2026-11-25T13:02:21Z",
