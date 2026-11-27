@@ -112,6 +112,37 @@ class WikiV1SiteTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "forbidden preview/synthetic marker"):
             verify_site(self.site)
 
+    def test_wiki_v1_with_og_card_and_share_kits(self):
+        og_path = self.site / "og-card.jpg"
+        og_path.write_bytes(b"\xff\xd8\xff\xe0" + b"\x00" * 16)
+        self.manifest["output_digests"]["og-card.jpg"] = hashlib.sha256(og_path.read_bytes()).hexdigest()
+
+        (self.site / "share/assets").mkdir(parents=True)
+        kit_html = self.site / "share/example-kit.html"
+        kit_html.write_text("<h1>Share Kit</h1>", encoding="utf-8")
+        panel_png = self.site / "share/assets/01-panel.png"
+        panel_png.write_bytes(b"\x89PNG\r\n\x1a\n" + b"\x00" * 16)
+        self.manifest["output_digests"]["share/example-kit.html"] = hashlib.sha256(kit_html.read_bytes()).hexdigest()
+        self.manifest["output_digests"]["share/assets/01-panel.png"] = hashlib.sha256(panel_png.read_bytes()).hexdigest()
+        self.save()
+        verify_site(self.site)
+
+        # Fake non-JPEG og-card.jpg is rejected
+        og_path.write_bytes(b"NOT_A_JPEG")
+        self.manifest["output_digests"]["og-card.jpg"] = hashlib.sha256(b"NOT_A_JPEG").hexdigest()
+        self.save()
+        with self.assertRaisesRegex(ValueError, "invalid JPEG image"):
+            verify_site(self.site)
+
+        # Restore og-card.jpg, test fake non-PNG share asset is rejected
+        og_path.write_bytes(b"\xff\xd8\xff\xe0" + b"\x00" * 16)
+        self.manifest["output_digests"]["og-card.jpg"] = hashlib.sha256(og_path.read_bytes()).hexdigest()
+        panel_png.write_bytes(b"NOT_A_PNG")
+        self.manifest["output_digests"]["share/assets/01-panel.png"] = hashlib.sha256(b"NOT_A_PNG").hexdigest()
+        self.save()
+        with self.assertRaisesRegex(ValueError, "invalid PNG image"):
+            verify_site(self.site)
+
     def test_preview_mode_is_rejected(self):
         self.manifest["mode"] = "preview"
         self.save()

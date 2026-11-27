@@ -11,11 +11,12 @@ ID = re.compile(r"[a-z][a-z0-9]*(?:-[a-z0-9]+)*\Z")
 HEX = re.compile(r"[0-9a-f]{64}\Z")
 ARTICLE = re.compile(r"articles/[a-z][a-z0-9]*(?:-[a-z0-9]+)*\.html\Z")
 WIKI_FILE = re.compile(
-    r"(?:index|search)\.html\Z|style\.css\Z|"
+    r"(?:index|search)\.html\Z|style\.css\Z|og-card\.jpg\Z|"
     r"data/(?:wiki\.json|entries\.csv|sources\.csv)\Z|"
-    r"(?:articles|topics|entries|sources)/[a-z][a-z0-9]*(?:-[a-z0-9]+)*\.html\Z"
+    r"share/assets/[a-z0-9][a-z0-9-]*\.(?:png|jpg)\Z|"
+    r"(?:articles|topics|entries|sources|share)/[a-z][a-z0-9]*(?:-[a-z0-9]+)*\.html\Z"
 )
-WIKI_DIRS = {"articles", "topics", "entries", "sources", "data"}
+WIKI_DIRS = {"articles", "topics", "entries", "sources", "data", "share", "share/assets"}
 ROOT_FILES = {
     "README.md", "CONTRIBUTING.md", "RELEASE_DISABLED", "verify_public.py",
     "tests/test_verify_public.py", ".github/workflows/verify.yml",
@@ -127,6 +128,13 @@ def verify_wiki_v1(site, found, dirs, manifest):
     verify_output_hashes(site, found, outputs)
 
     for name in outputs:
+        if name == "og-card.jpg" or name.startswith("share/assets/"):
+            raw = (site / name).read_bytes()
+            if name.endswith(".jpg") and not raw.startswith(b"\xff\xd8\xff"):
+                fail(f"invalid JPEG image: {name}")
+            if name.endswith(".png") and not raw.startswith(b"\x89PNG\r\n\x1a\n"):
+                fail(f"invalid PNG image: {name}")
+            continue
         text = (site / name).read_text(encoding="utf-8")
         for marker in FORBIDDEN_MARKERS:
             if marker in text:
