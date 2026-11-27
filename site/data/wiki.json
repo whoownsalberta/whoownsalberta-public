@@ -9,10 +9,12 @@
         "dynalife-claim-minister-direction",
         "dynalife-claim-audit-access-dispute",
         "dynalife-lead-gross-payments-and-payees",
+        "dynalife-note-109m-reconciliation",
         "dynalife-claim-government-rationale",
         "dynalife-claim-business-case",
         "dynalife-claim-rfp-counteraccount",
-        "dynalife-claim-board-authority"
+        "dynalife-claim-board-authority",
+        "dynalife-claim-recommendations-nov2026"
       ],
       "deck": "How ministerial direction drove a $4.8-billion community lab outsourcing commitment without a documented business case—leaving taxpayers with an estimated $77 million in extra costs, a buyout cheque, and restricted audit records.",
       "featured": true,
@@ -20,9 +22,490 @@
       "kicker": "Health Care & Public Money",
       "published_at": null,
       "title": "No Documented Business Case, One Bidder, and a $31.5-Million Buyback: Inside Alberta's DynaLIFE Reversal"
+    },
+    {
+      "byline": "WhoOwnsAlberta Research Desk",
+      "cited_entry_ids": [
+        "b44-claim-crown-corp-repeal",
+        "b44-claim-government-rationale",
+        "b44-claim-fatality-mandatory-repeal",
+        "b44-claim-health-data-linking",
+        "b44-claim-oversight-safeguards-retained",
+        "b44-money-sheriffs-and-policing-budgets",
+        "b44-claim-interjurisdictional-baseline",
+        "b44-money-pwc-2021-forecast-and-pfm",
+        "b44-lead-updated-asps-costing-and-polling",
+        "b44-claim-expanded-powers-timeline",
+        "b44-claim-oic-116-board-overlap",
+        "b44-claim-mandate-referendum-omission",
+        "b44-lead-fatality-backlog-and-regulations"
+      ],
+      "deck": "Primary statutory text and Government Estimates separate what Alberta's 163-page First Reading omnibus bill (168-page PDF amending 20 statutes) changes—from Crown-corp repeal to ending mandatory in-custody fatality inquiries and non-consensual health data linking—from the oversight guardrails it leaves intact.",
+      "featured": true,
+      "id": "provincial-police-bill-44-accountability",
+      "kicker": "Policing & Accountability · Primary Statutory Audit",
+      "published_at": "2026-11-27",
+      "title": "Inside Bill 44: Alberta's Provincial Police Reversal, Custodial Death Inquiries, and $200M Sheriffs Budget"
     }
   ],
   "entries": [
+    {
+      "as_of": "2026-11-27T21:31:00Z",
+      "attribution": "Legislative Assembly of Alberta, Bill 44 (First Reading, Nov. 23, 2026), s. 12",
+      "citations": [
+        {
+          "locator": "printed p. 104 (PDF p. 106), s. 12(6), proposed Police Act s. 33.4(4)",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 105 (PDF p. 107), Explanatory Note to s. 12(6), former Police Act s. 33.4(2)",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 108 (PDF p. 110), s. 12(12), amending Police Act s. 33.75",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed pp. 118-119 (PDF pp. 120-121), ss. 12(17)-(18), proposed s. 33.951(6) & repeal of Parts 3.3 and 3.4",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "contextualizes"
+        },
+        {
+          "locator": "printed pp. 162-163 (PDF pp. 165-166 of 168), s. 20(1), final amended statute",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "contextualizes"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "b44-claim-crown-corp-repeal",
+      "kind": "claim",
+      "next_check": "Track Bill 44 Second Reading, Committee of the Whole amendments, and Royal Assent, and confirm Tier 1 independent verification of s. 12.",
+      "research_state": "approved",
+      "summary": "Introduced on November 23, 2026 under Premier Danielle Smith as a 163-page First Reading omnibus bill (168-page PDF amending 20 provincial statutes), Section 12 of Bill 44 repeals the Police Act's 2025 Crown-corporation structure (s. 33.4(2)) and the Bill 15 employee-transfer chapters (Parts 3.3 and 3.4). It establishes the Alberta Sheriffs Police Service directly as a non-corporate statutory force whose employees are appointed under the Public Service Act, shifts municipal service contracts under s. 33.75 to the Crown in right of Alberta, and provides a three-year transitional wind-down window for the existing corporation (s. 33.951).",
+      "title": "Bill 44 repeals the Alberta Sheriffs Police Service's Crown-corporation status and moves staff under the Public Service Act"
+    },
+    {
+      "as_of": "2026-11-27T08:15:00Z",
+      "attribution": "Alberta King's Printer & Legislative Assembly of Alberta (CIDA, CIA, Police Act, Bill 4 [2025], Bill 15 [2026])",
+      "citations": [
+        {
+          "locator": "printed p. 1, Critical Infrastructure Defence Act s. 1(1)(a)(ii.1) (added by 2025 c5 s2)",
+          "source_id": "b44-src-cida-2020",
+          "stance": "supports"
+        },
+        {
+          "locator": "Table of Contents, Compassionate Intervention Act, SA 2025 c C-21.5",
+          "source_id": "b44-src-cia-2025",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 8, s. 2(2), amending Safer Communities and Neighbourhoods Act (SA 2007 c S-0.5)",
+          "source_id": "b44-src-bill15-2026",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 3, s. 2(3)(b), amending Disclosure to Protect Against Domestic Violence (Clare's Law) Act",
+          "source_id": "b44-src-bill4-2025",
+          "stance": "supports"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "b44-claim-expanded-powers-timeline",
+      "kind": "event",
+      "next_check": "Track proclamation date of the Compassionate Intervention Act (SA 2025 c C-21.5) and any regulations designating facilities.",
+      "research_state": "approved",
+      "summary": "Primary statutes show a multi-premier expansion of provincial enforcement and detention authorities: under Premier Jason Kenney, Bill 1 (2020) enacted the Critical Infrastructure Defence Act (CIDA); under Premier Danielle Smith, Bill 11 (2024) and Bill 49 (2025) created the independent agency police framework, Bill 31 (2024) and Bill 45 (2025) expanded CIDA to a two-kilometre U.S. border corridor and energy facilities, Bill 53 (2025) enacted the Compassionate Intervention Act authorizing involuntary addiction detention, Bill 4 (2025) expanded Clare's Law collection and disclosure of health and personal records for threat assessments, and Bill 15 (2026) authorized delegating Safer Communities and Neighbourhoods Act (originally enacted in 2007 under PC Premier Ed Stelmach) powers to ASPS.",
+      "title": "2020-2026 enforcement, detention, and data statutes span both Kenney and Smith governments plus a 2007 PC origin"
+    },
+    {
+      "as_of": "2026-11-27T21:31:00Z",
+      "attribution": "Alberta King's Printer, Fatality Inquiries Act (RSA 2000 c F-9) & Legislative Assembly of Alberta, Bill 44, s. 6",
+      "citations": [
+        {
+          "locator": "printed p. 18 (PDF p. 20), Fatality Inquiries Act s. 33(3)",
+          "source_id": "b44-src-fatality-act",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 70 (PDF p. 72), s. 6(23), proposed Fatality Inquiries Act s. 33(2)",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 70 (PDF p. 72), s. 6(23), proposed Fatality Inquiries Act s. 33(2)(b)(ii)",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 65 (PDF p. 67), s. 6(20), proposed Fatality Inquiries Act s. 30(2)",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 53 (PDF p. 55), s. 6(6), proposed Fatality Inquiries Act s. 12(1)(a)",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "contextualizes"
+        },
+        {
+          "locator": "printed p. 76 (PDF p. 78), ss. 6(29)-(30), Offence penalty & Coming into force",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "contextualizes"
+        },
+        {
+          "locator": "printed pp. 17-18 (PDF pp. 19-20), s. 33(3.1) & history note (SA 2017 c 8 s 2)",
+          "source_id": "b44-src-fatality-act",
+          "stance": "contextualizes"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "b44-claim-fatality-mandatory-repeal",
+      "kind": "claim",
+      "next_check": "Track Committee amendments to Bill 44 Section 6 and review draft regulations under s. 55(d)-(e) once published.",
+      "research_state": "approved",
+      "summary": "Section 6 of Bill 44 repeals Fatality Inquiries Act s. 33(3)—codified in 2005 (PC era) and narrowed in 2017 (Notley NDP, SA 2017 c 8 s 2) only to carve out youth deaths already reviewed by the Child and Youth Advocate (s. 33(3.1)-(3.2)) while keeping adult peace-officer and correctional custody inquiries mandatory unless due solely to natural, unpreventable causes or unrelated to care. In its place, the Board applies unpublished Cabinet-prescribed factors (ss. 33(2), 55(e)) with no statutory duty to publish reasons when declining an inquiry. Section 6 also downgrades next-of-kin medical-examiner report access to discretionary under regulation (s. 30(2)), adds compulsory addiction facilities to medical-examiner notification only (s. 12(1)(a)), and contains no transitional savings clause for pending inquiries.",
+      "title": "Bill 44 repeals mandatory public fatality inquiries for custodial deaths, shifts next-of-kin report access to regulation, and omits a transitional clause"
+    },
+    {
+      "as_of": "2026-11-27T08:15:00Z",
+      "attribution": "Hon. Mickey Amery (Hansard, Nov. 23, 2026), Hon. Mike Ellis (Hansard, Nov. 25, 2026), and Alberta Next Panel Report (Dec. 2025)",
+      "citations": [
+        {
+          "locator": "printed pp. 2283-2284 (PDF pp. 15-16), Introduction of Bills, Bill 44",
+          "source_id": "b44-src-hansard-nov23-2026",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 2388 (PDF p. 10), Oral Question Period, Alberta Sheriffs Police Service",
+          "source_id": "b44-src-hansard-nov25-2026",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 8, Our Findings, Alberta Provincial Police Service",
+          "source_id": "b44-src-alberta-next-2025",
+          "stance": "supports"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "attributed_claim",
+      "id": "b44-claim-government-rationale",
+      "kind": "claim",
+      "next_check": "Update with Second Reading ministerial speeches on Bill 44 and any written responses from PSES and Justice media offices.",
+      "research_state": "approved",
+      "summary": "In Alberta Hansard on November 23, 2026, Justice Minister Mickey Amery stated that Bill 44 safeguards voter data, modernizes law-enforcement legislation, improves SafeRoads Alberta, and helps families obtain prompt, accurate answers after sudden deaths. On November 25, 2026, Public Safety Minister Mike Ellis told the Assembly that rising municipal policing costs flow directly from RCMP cost increases and that ASPS augments and supports existing forces. Separately, the December 2025 Alberta Next Panel report pointed to roughly 500 unfilled positions among 3,151 contracted Alberta RCMP positions and the federal government's March 10, 2025 RCMP modernization white paper ahead of the 2032 PPSA expiry.",
+      "title": "Ministers and the Alberta Next Panel cite timely family answers, rising RCMP costs, ~500 RCMP vacancies, and the 2032 federal contract expiry"
+    },
+    {
+      "as_of": "2026-11-27T08:15:00Z",
+      "attribution": "Legislative Assembly of Alberta, Bill 44 (First Reading, Nov. 23, 2026), s. 10",
+      "citations": [
+        {
+          "locator": "printed p. 90 (PDF p. 92), s. 10(8), proposed OSIA s. 8.031(2)",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 92 (PDF p. 94), s. 10(8), proposed OSIA s. 8.051(4)",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 94 (PDF p. 96), s. 10(8), proposed OSIA s. 8.061(3)(b)",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed pp. 95 & 100 (PDF pp. 97 & 102), s. 10(8) s. 8.071 & s. 10(11) s. 11(m)",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "supports"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "b44-claim-health-data-linking",
+      "kind": "claim",
+      "next_check": "Obtain formal OIPC Alberta comments on Section 10 and monitor any Cabinet regulations proposed under OSIA s. 11(m).",
+      "research_state": "approved",
+      "summary": "Section 10 of Bill 44 adds Part 3 (Public Sector Data Analytics) to the Office of Statistics and Information Act, permitting eligible health custodians to disclose individually identifying health information without individual consent (s. 8.031(2)) and empowering a minister-designated director to authorize binding disclosure orders over custodian objections (ss. 8.05-8.051). A single comprehensive privacy impact assessment replaces project-level PIAs under POPA and the Health Information Act (s. 8.061(3)), and Part 3 prevails over specified Health Information Act sections plus any additional sections prescribed by Cabinet regulation (ss. 8.071, 11(m)), while retaining OIPC PIA filings, POPA re-identification limits, and public annual reporting.",
+      "title": "Bill 44 authorizes cross-ministry linking of identifiable health records without consent and allows Cabinet to expand Health Information Act overrides"
+    },
+    {
+      "as_of": "2026-11-27T21:31:00Z",
+      "attribution": "ON CSPA 2019 & Coroners Act; QC Police Act & Coroners Act; BC Coroners Act; MB Fatality Inquiries Act",
+      "citations": [
+        {
+          "locator": "Part I, s. 2(1), definition of member of the Ontario Provincial Police",
+          "source_id": "b44-src-on-cspa-2019",
+          "stance": "contextualizes"
+        },
+        {
+          "locator": "Title II, Chapter I, Division I, s. 50, Sûreté du Québec jurisdiction",
+          "source_id": "b44-src-qc-police-act",
+          "stance": "contextualizes"
+        },
+        {
+          "locator": "Part 4, Division 1, s. 18(2)",
+          "source_id": "b44-src-bc-coroners-act",
+          "stance": "supports"
+        },
+        {
+          "locator": "s. 19(5), Presumption of inquest for peace-officer force or custody deaths",
+          "source_id": "b44-src-mb-fatality-act",
+          "stance": "supports"
+        },
+        {
+          "locator": "s. 10(4), Death in lock-up / custodial premises mandatory inquest",
+          "source_id": "b44-src-on-coroners-act",
+          "stance": "supports"
+        },
+        {
+          "locator": "Chapter IV, Division I, s. 104",
+          "source_id": "b44-src-qc-coroners-act",
+          "stance": "contextualizes"
+        },
+        {
+          "locator": "s. 289.2, Bureau des enquêtes indépendantes reporting",
+          "source_id": "b44-src-qc-police-act",
+          "stance": "contextualizes"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "b44-claim-interjurisdictional-baseline",
+      "kind": "claim",
+      "next_check": "Obtain verified Saskatchewan Coroners Act 1999 s. 20 copy once King's Printer TLS chain issue is resolved.",
+      "research_state": "approved",
+      "summary": "Verified primary statutes across four Canadian provinces distinguish policing structure from custodial-death inquests. On policing, Ontario's Community Safety and Policing Act, 2019 (s. 2(1)) employs OPP officers under Ontario's Public Service Act and Quebec's Police Act (s. 50) places the Sûreté du Québec under the Minister of Public Security—both non-corporate ministry models. On custodial deaths, however, British Columbia (Coroners Act, s. 18(2)-(2.1)), Manitoba (The Fatality Inquiries Act, s. 19(5)), and Ontario (Coroners Act, s. 10(4)) all mandate public inquests for custodial or peace-officer force deaths (with BC obligating published reasons whenever waived), whereas Quebec pairs discretionary inquests (Coroners Act, ss. 104-106) with mandatory independent BEI police-death investigations (Police Act, ss. 289.1-289.2).",
+      "title": "Four-province statutory baseline: ON and QC house police under ministries, while BC, MB, and ON mandate custodial inquests"
+    },
+    {
+      "as_of": "2026-11-27T08:15:00Z",
+      "attribution": "Government of Alberta, Alberta Next Panel Final Report (Dec. 2025) & Orders in Council 109/2026, 110/2026, 160/2026",
+      "citations": [
+        {
+          "locator": "printed p. 4, Executive Summary, Recommendation #5",
+          "source_id": "b44-src-alberta-next-2025",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 8, Our Findings, Alberta Provincial Police Service",
+          "source_id": "b44-src-alberta-next-2025",
+          "stance": "supports"
+        },
+        {
+          "locator": "O.C. 109/2026, March 31, 2026, ss. 1-2",
+          "source_id": "b44-src-oic-109-2026",
+          "stance": "supports"
+        },
+        {
+          "locator": "O.C. 110/2026, March 31, 2026, s. 1(e)",
+          "source_id": "b44-src-oic-110-2026",
+          "stance": "supports"
+        },
+        {
+          "locator": "O.C. 160/2026, May 28, 2026, s. 1",
+          "source_id": "b44-src-oic-160-2026",
+          "stance": "supports"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "b44-claim-mandate-referendum-omission",
+      "kind": "claim",
+      "next_check": "Archive official Elections Alberta certified October 19, 2026 referendum results report once published.",
+      "research_state": "approved",
+      "summary": "In December 2025, the government-appointed Alberta Next Panel recommended transitioning community policing from the RCMP to an Alberta Police Service prior to the 2032 contract expiry without holding a referendum—arguing that over 80% of Albertans already receive policing from municipal services or Alberta Sheriffs—even though its own report recorded 52% opposition in professional polling (44%, 41%, and 48% support across three 2025 waves, lowest of seven measures) and majority opposition in online surveys. Cabinet's Orders in Council 109/2026, 110/2026, and 160/2026 set ten questions for the October 19, 2026 stand-alone referendum with zero questions on RCMP replacement.",
+      "title": "Alberta Next Panel advised against a policing referendum despite 52% polling opposition, and the October 19, 2026 ballot omitted RCMP replacement"
+    },
+    {
+      "as_of": "2026-11-27T21:31:00Z",
+      "attribution": "Alberta King's Printer, Orders in Council 241/2025 (AR 163/2025) & 116/2026 (AR 72/2026)",
+      "citations": [
+        {
+          "locator": "Appendix, s. 3(3)(a), Board of directors eligibility",
+          "source_id": "b44-src-oic-241-2025",
+          "stance": "supports"
+        },
+        {
+          "locator": "O.C. 116/2026 (AR 72/2026), April 16, 2026, Appendix ss. 1-2",
+          "source_id": "b44-src-oic-116-2026",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 4, Independent Agency Police Service Regulation s. 3 history note",
+          "source_id": "b44-src-iaps-reg-2025",
+          "stance": "supports"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "b44-claim-oic-116-board-overlap",
+      "kind": "event",
+      "next_check": "Monitor transitional application of AR 163/2025 during the s. 33.951 wind-down window.",
+      "research_state": "approved",
+      "summary": "On July 2, 2025, Order in Council 241/2025 enacted AR 163/2025, whose section 3(3)(a) barred members of the Independent Agency Police Service Oversight Board from serving concurrently on the corporate board of directors. Nine months later, on April 16, 2026, Cabinet issued Order in Council 116/2026 (AR 72/2026) repealing section 3(3)(a) to remove that board-overlap bar—seven months before Bill 44 proposed abolishing the corporate structure altogether.",
+      "title": "April 16, 2026 Order in Council 116/2026 repealed the regulatory rule separating corporate directors from the Oversight Board"
+    },
+    {
+      "as_of": "2026-11-27T08:15:00Z",
+      "attribution": "Alberta King's Printer, Police Act (RSA 2000 c P-17) & Legislative Assembly of Alberta, Bill 44, ss. 11-12",
+      "citations": [
+        {
+          "locator": "printed p. 40, Police Act s. 33.8(1)",
+          "source_id": "b44-src-police-act",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 45, Police Act s. 33.94(2)(a)-(b)",
+          "source_id": "b44-src-police-act",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed pp. 111-112 (PDF pp. 113-114), s. 12(15), preserving Police Act s. 33.94(2)",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 106 (PDF p. 108), s. 12(8)(c), proposed Police Act s. 33.7(3.1)",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "supports"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "b44-claim-oversight-safeguards-retained",
+      "kind": "claim",
+      "next_check": "Monitor whether Cabinet uses s. 33.95(m)/(n) regulations to narrow or expand operational-independence boundaries after Bill 44 enactment.",
+      "research_state": "approved",
+      "summary": "While removing corporate status, Bill 44 leaves intact Police Act s. 33.8 (the minister-appointed Independent Agency Police Service Oversight Board, barring MLAs and ASPS officers) and s. 33.94(2) (prohibiting the Minister from directing any ASPS officer including the chief or issuing policies respecting specific investigations, operations, discipline, or day-to-day administration). Bill 44 also codifies Crown vicarious liability (s. 40.1), adds chief accountability to report related Level 4/5 complaint dispositions to the Police Review Commission (s. 33.7(3.1)), and expands mandatory referrals under the Peace Officer Act.",
+      "title": "Bill 44 retains the civilian Oversight Board, statutory ministerial non-interference in operations, and Police Review Commission oversight"
+    },
+    {
+      "as_of": "2026-11-27T08:15:00Z",
+      "attribution": "Secondary news reporting attributed to Alberta Justice (unverified against primary docket)",
+      "citations": [
+        {
+          "locator": "printed p. 70 (PDF p. 72), s. 6(23), proposed Fatality Inquiries Act s. 33(2)",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "contextualizes"
+        },
+        {
+          "locator": "printed p. 76 (PDF p. 78), ss. 6(29)-(30), Offence penalty & Coming into force",
+          "source_id": "b44-src-bill44-2026",
+          "stance": "contextualizes"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "unverified",
+      "id": "b44-lead-fatality-backlog-and-regulations",
+      "kind": "lead",
+      "next_check": "Request official Fatality Review Board pending-inquiry docket and transitional policy from Alberta Justice (heather.jenkins@gov.ab.ca) or via ATIA, and track draft Bill 44 regulations.",
+      "research_state": "held",
+      "summary": "Secondary news reports attribute to Alberta Justice a backlog of 180 pending public fatality inquiries (125 mandatory and 55 discretionary) with 8-to-14-year waits, but no primary public Alberta Justice or Fatality Review Board statistical docket confirming those exact counts has yet been published. Likewise, the Cabinet-prescribed screening factors (proposed FIA s. 55(e)), family report-release classes and fees (s. 55(d)), and the transitional fate of already-recommended mandatory inquiries remain undisclosed as of November 27, 2026.",
+      "title": "Unverified pending-inquiry backlog breakdown (180 total / 125 mandatory / 55 discretionary) and unpublished Bill 44 regulations"
+    },
+    {
+      "as_of": "2026-11-27T08:15:00Z",
+      "attribution": "Coverage-gap record (primary records not yet published or retrieved)",
+      "citations": [
+        {
+          "locator": "printed p. 96 (PDF p. 96), Transition Cost Overview",
+          "source_id": "b44-src-pwc-apps-2021",
+          "stance": "contextualizes"
+        },
+        {
+          "locator": "printed p. 200 (PDF p. 210), PSES Expense Vote by Program, line 2.1",
+          "source_id": "b44-src-estimates-2026-27",
+          "stance": "contextualizes"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "unverified",
+      "id": "b44-lead-updated-asps-costing-and-polling",
+      "kind": "lead",
+      "next_check": "Follow up via outreach packet with PSES, Alberta Municipalities, RMA, CBA Alberta, and OIPC Alberta, and check Alberta Open Government for any updated transition costing or audited 2025-26 program-level schedules.",
+      "research_state": "held",
+      "summary": "As of November 27, 2026, no updated provincial police transition cost study superseding the October 2021 PwC forecast has been published on Alberta Open Government alongside the $200.942M 2026-27 ASPS operating budget. In addition, primary methodology tables for the February 2023 Janet Brown / Alberta Municipalities survey (reported in secondary coverage as 85% supporting a referendum) and formal post-First Reading written submissions from OIPC Alberta, CBA Alberta, RMA, and Alberta Municipalities on Bill 44 have not yet been published or retrieved.",
+      "title": "Missing updated post-2021 provincial police transition costing, primary 2023 Janet Brown poll crosstabs, and post-Bill 44 stakeholder briefs"
+    },
+    {
+      "as_of": "2026-11-27T08:15:00Z",
+      "attribution": "PwC / Alberta Justice & Solicitor General (2021) & Alberta PSES Renewed PFM Factsheet (Dec. 18, 2025)",
+      "citations": [
+        {
+          "locator": "printed p. 96 (PDF p. 96), Transition Cost Overview",
+          "source_id": "b44-src-pwc-apps-2021",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed pp. 16 & 77 (PDF pp. 16 & 77), Operating Model Cost Summary",
+          "source_id": "b44-src-pwc-apps-2021",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 36 (PDF p. 36), Exhibit 4, Overview of Policing Costs",
+          "source_id": "b44-src-pwc-apps-2021",
+          "stance": "supports"
+        },
+        {
+          "locator": "PDF p. 1, Overview & 5-Year Phased Implementation Table",
+          "source_id": "b44-src-pfm-factsheet-2025",
+          "stance": "supports"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "b44-money-pwc-2021-forecast-and-pfm",
+      "kind": "calculation",
+      "next_check": "Verify whether PSES publishes an updated transition cost model or municipal billing schedule for 2026-27 under the amended Police Funding Regulation.",
+      "research_state": "approved",
+      "summary": "Two distinct non-summable financial baselines frame Alberta's policing debate. Under Premier Jason Kenney, the October 2021 PwC Transition Study forecast roughly $366M over six years in transition costs (about $241M operating and $125M capital) and $735M to $759M in annual operating costs for a full provincial police force, alongside roughly $170M per year in federal RCMP cost-sharing (30% under PPSA; 30% or 10% under MPSAs). Separately, under Premier Danielle Smith, the Renewed Police Funding Model effective April 1, 2026 increases rural and small-municipality shares of actual frontline PPSA costs from 22% in 2026-27 by two percentage points annually to 30% in 2030-31+, while adding a Vacancy Modifier and Population Density Subsidy.",
+      "title": "Separate bases: 2021 PwC forecast (~$366M transition, $735M-$759M/yr) vs. 2026-2031 municipal cost-share ramp (22% to 30%)"
+    },
+    {
+      "as_of": "2026-11-27T21:31:00Z",
+      "attribution": "Government of Alberta, 2025-26 & 2026-27 Government Estimates and 2026-29 PSES Business Plan",
+      "citations": [
+        {
+          "locator": "printed p. 200 (PDF p. 210), PSES Expense Vote by Program, line 2.1",
+          "source_id": "b44-src-estimates-2026-27",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 200 (PDF p. 210), PSES Expense Vote by Program, line 2.4",
+          "source_id": "b44-src-estimates-2026-27",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 182 (PDF p. 192), PSES Expense Vote by Program, line 2.1",
+          "source_id": "b44-src-estimates-2025-26",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 143 (PDF p. 4), Key Budget Highlights",
+          "source_id": "b44-src-pses-bp-2026-29",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 143 (PDF p. 4), Key Budget Highlights",
+          "source_id": "b44-src-pses-bp-2026-29",
+          "stance": "contextualizes"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "b44-money-sheriffs-and-policing-budgets",
+      "kind": "money_flow",
+      "next_check": "Reconcile 2025-26 audited actuals from PSES Annual Report financial tables once machine-readable schedules are confirmed with PSES.",
+      "research_state": "approved",
+      "summary": "Reconciling Alberta's 2025-26 and 2026-27 Government Estimates on a single voted-budget basis, Program 2.1 (renamed Alberta Sheriffs Police Service Funding) rose from $136.738M (2024-25 Budget) and $156.035M (original 2025-26 Estimate; restated to $164.066M Comparable Budget after an intra-ministry +$8.031M reclassification from Law Enforcement Oversight alongside splitting out the Police Review Commission) to $200.942M in 2026-27, incorporating +$36.9M for ASPS implementation. Program 2.4 Contract Policing and Policing Oversight rose from $397.192M to $432.289M, bringing the combined two-program Estimates total from $553.227M (original 2025-26; $561.258M restated) to $633.231M. Separate 2026-27 PSES Business Plan allocations include $14.9M for border Sheriffs Interdiction Patrol Teams and $26.4M for the Police Review Commission.",
+      "title": "Voted Alberta Sheriffs operating budgets rose from $136.7M (2024-25) and $156.0M (original 2025-26) to $200.942M in 2026-27"
+    },
     {
       "as_of": "2026-11-25T13:02:21Z",
       "attribution": "Alberta Health Services audited 2023–24 annual report",
@@ -58,8 +541,8 @@
       "title": "$31.5 million disclosed cash purchase consideration ($29.388M net cash outflow)"
     },
     {
-      "as_of": "2026-11-25T13:02:21Z",
-      "attribution": "Auditor General of Alberta; Premier Danielle Smith in Hansard",
+      "as_of": "2026-11-27T08:05:00Z",
+      "attribution": "Auditor General of Alberta (Nov. 2025 & Nov. 17, 2026 PAC); Premier Danielle Smith in Hansard",
       "citations": [
         {
           "locator": "printed p. 2, Access to Information Challenges",
@@ -75,6 +558,11 @@
           "locator": "printed pp. 395–396, Oral Question Period, Premier Smith",
           "source_id": "dynalife-source-hansard-2025",
           "stance": "contextualizes"
+        },
+        {
+          "locator": "printed p. PA-617 (PDF p. 15), Auditor General Phil Peters testimony",
+          "source_id": "dynalife-source-pac-nov26",
+          "stance": "contextualizes"
         }
       ],
       "corrections": [],
@@ -83,7 +571,7 @@
       "kind": "claim",
       "next_check": null,
       "research_state": "approved",
-      "summary": "The Auditor General said AHS restricted access to records with Department of Health support and that the impact of missing or redacted material was indeterminate. Premier Smith told the Assembly the government fully cooperated and disputed suggestions otherwise. The available records do not establish personal intent behind the access limits.",
+      "summary": "The Auditor General said AHS restricted access to records with Department of Health support and that the impact of missing or redacted material was indeterminate. Premier Smith told the Assembly the government fully cooperated and disputed suggestions otherwise. On November 17, 2026, Auditor General Phil Peters testified at Public Accounts Committee that AHS engaged the legal team reviewing DynaLIFE documents and that OAG is not seeing the same access dynamics in its ongoing AHS procurement audit, though legal privilege remains an issue. Available records do not establish personal intent behind the access limits.",
       "title": "Dispute over records access during the Auditor General examination"
     },
     {
@@ -246,6 +734,40 @@
       "title": "$4.8 billion estimated initial commitment (cancelled August 31, 2023)"
     },
     {
+      "as_of": "2026-11-27T08:05:00Z",
+      "attribution": "Office of the Auditor General of Alberta (Nov. 2026 trackers & Nov. 17, 2026 PAC); Minister Matt Jones (Mar. 18, 2026 Estimates)",
+      "citations": [
+        {
+          "locator": "p. 2, Detailed recommendation list (November 16, 2026), DynaLIFE rows listed Not Ready for Assessment",
+          "source_id": "dynalife-source-oag-hospital-nov26",
+          "stance": "supports"
+        },
+        {
+          "locator": "pp. 4–5, Detailed recommendation list (November 2026), DynaLIFE rows listed Not Ready for Assessment",
+          "source_id": "dynalife-source-oag-primary-nov26",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. PA-609 (PDF p. 7), Auditor General Phil Peters opening statement",
+          "source_id": "dynalife-source-pac-nov26",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. FC-723 (PDF p. 7), Minister Matt Jones testimony",
+          "source_id": "dynalife-source-estimates-mar26",
+          "stance": "contextualizes"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "documented",
+      "id": "dynalife-claim-recommendations-nov2026",
+      "kind": "claim",
+      "next_check": "Re-check both OAG recommendation summary PDFs (overwritten in-place) after the spring 2027 update or a PAC hearing with Primary and Preventative Health Services.",
+      "research_state": "approved",
+      "summary": "One year after the November 2025 examination, both joint OAG recommendations (procurement analysis before major spending; records management documenting key decision-makers and rationale) remain listed as Not Ready for Assessment in the November 2026 status summaries for Hospital and Surgical Health Services (Nov. 16, 2026) and Primary and Preventative Health Services (November 2026 edition). On November 17, 2026, Auditor General Phil Peters testified at Public Accounts Committee that both remain outstanding. In March 18, 2026 Main Estimates, Minister Matt Jones testified that the health system is acting on all recommendations; Not Ready for Assessment means the OAG has not yet been notified that implementation is ready for audit verification, not that zero internal work has started.",
+      "title": "Both Auditor General DynaLIFE recommendations remain Not Ready for Assessment in November 2026"
+    },
+    {
       "as_of": "2026-11-25T13:02:21Z",
       "attribution": "Auditor General of Alberta",
       "citations": [
@@ -288,10 +810,44 @@
       "epistemic_status": "unverified",
       "id": "dynalife-lead-gross-payments-and-payees",
       "kind": "lead",
-      "next_check": "Obtain executed 2022 agreement and amendments, AHS/APL service-payment remittance ledger, acquisition closing reconciliation, and certified Alberta Corporate Registry partnership searches.",
+      "next_check": "Submit narrowly scoped ATIA requests to AHS/APL for the executed May 30, 2022 Services Agreement, Jan. 5, 2023 amendment, service-payment remittance subledger, and Aug. 31, 2023 closing reconciliation; order certified Alberta Corporate Registry historical partnership searches upon editorial budget sign-off.",
       "research_state": "held",
       "summary": "Public financial statements and the Auditor General examination do not disclose total gross service payments to DynaLIFE under the expanded 2022 agreement, the executed contract text or board-condition check, or the legal cash payee and owner-level distribution of the $31.5 million acquisition consideration.",
       "title": "Gross service payments, contract terms, and owner-level proceeds remain unverified"
+    },
+    {
+      "as_of": "2026-11-27T08:05:00Z",
+      "attribution": "Global News / The Canadian Press (Nov. 19, 2025); Auditor General of Alberta (Nov. 2025); AHS FY 2023–24 audited Note 27",
+      "citations": [
+        {
+          "locator": "lead paragraph and paragraph 7 (Canadian Press wire report by Jack Farrell)",
+          "source_id": "dynalife-source-globalnews-2025",
+          "stance": "supports"
+        },
+        {
+          "locator": "printed p. 36, Total costs of unsuccessful laboratory procurements",
+          "source_id": "dynalife-source-oag-2025",
+          "stance": "contextualizes"
+        },
+        {
+          "locator": "printed pp. 34–35, Cost to Alberta Taxpayers",
+          "source_id": "dynalife-source-oag-2025",
+          "stance": "contextualizes"
+        },
+        {
+          "locator": "printed p. 127, note 27, row Cash purchase consideration paid ($31,500 thousand)",
+          "source_id": "dynalife-source-ahs24",
+          "stance": "contextualizes"
+        }
+      ],
+      "corrections": [],
+      "epistemic_status": "attributed_claim",
+      "id": "dynalife-note-109m-reconciliation",
+      "kind": "note",
+      "next_check": null,
+      "research_state": "approved",
+      "summary": "November 19, 2025 Canadian Press reporting published by Global News reported roughly $109 million in taxpayer costs by adding the Auditor General’s $77 million extra-cost estimate to the $32 million rounded acquisition figure ($77M + $31.5M unrounded = $108.5M). The Auditor General’s 48-page November 2025 report never prints $109 million and excludes the $32 million acquisition from its unsuccessful-procurement cost table because AHS acquired operating assets and assumed liabilities at fair value. WhoOwnsAlberta.info keeps these accounting bases separate rather than combining them.",
+      "title": "Why some headlines report $109 million"
     }
   ],
   "mode": "public",
@@ -311,7 +867,8 @@
           "entry_ids": [
             "dynalife-claim-audit-access-dispute",
             "dynalife-claim-rfp-counteraccount",
-            "dynalife-claim-government-rationale"
+            "dynalife-claim-government-rationale",
+            "dynalife-claim-recommendations-nov2026"
           ],
           "heading": "Audit access dispute and counteraccount",
           "text": "The Auditor General reported restricted access to records with indeterminate impact on findings; Premier Danielle Smith told the Assembly the government cooperated fully."
@@ -327,7 +884,8 @@
           "entry_ids": [
             "dynalife-claim-original-commitment",
             "dynalife-claim-extra-cost",
-            "dynalife-claim-acquisition-cash"
+            "dynalife-claim-acquisition-cash",
+            "dynalife-note-109m-reconciliation"
           ],
           "heading": "Disclosed public-record amounts",
           "text": "Each figure below stays on its source basis. Do not combine prospective contract commitments, counterfactual cost estimates, and asset-acquisition cash into a single purported loss."
@@ -341,7 +899,8 @@
       "blocks": [
         {
           "entry_ids": [
-            "dynalife-lead-gross-payments-and-payees"
+            "dynalife-lead-gross-payments-and-payees",
+            "dynalife-claim-recommendations-nov2026"
           ],
           "heading": "Unverified payments, contract terms, and ownership proceeds",
           "text": "Gross service payments, the executed contract text, and owner-level distributions of acquisition cash remain unknown in the verified public record."
@@ -366,7 +925,8 @@
           "entry_ids": [
             "dynalife-claim-original-commitment",
             "dynalife-claim-extra-cost",
-            "dynalife-claim-acquisition-cash"
+            "dynalife-claim-acquisition-cash",
+            "dynalife-note-109m-reconciliation"
           ],
           "heading": "Separate money measures",
           "text": "Public records report three distinct financial measures that answer different questions and must not be summed: a cancelled $4.8 billion prospective commitment, $77 million in auditor-estimated extra costs, and $31.5 million in disclosed cash purchase consideration."
@@ -375,15 +935,122 @@
       "id": "dynalife-overview",
       "summary": "Public-record overview of how Alberta directed, contracted, and reversed expanded community lab outsourcing.",
       "title": "DynaLIFE community lab contract — overview"
+    },
+    {
+      "blocks": [
+        {
+          "entry_ids": [
+            "b44-claim-crown-corp-repeal",
+            "b44-claim-oversight-safeguards-retained",
+            "b44-claim-oic-116-board-overlap",
+            "b44-claim-expanded-powers-timeline"
+          ],
+          "heading": "Provincial Police Governance & Retained Safeguards",
+          "text": "Reconciles Bill 44 Section 12 and OIC 116/2026 against the Police Act's 2024-25 Crown-corporation framework and retained statutory non-interference and oversight protections."
+        },
+        {
+          "entry_ids": [
+            "b44-claim-fatality-mandatory-repeal",
+            "b44-claim-health-data-linking",
+            "b44-claim-interjurisdictional-baseline",
+            "b44-lead-fatality-backlog-and-regulations"
+          ],
+          "heading": "Fatality Inquiries & Cross-Ministry Health Data Linking",
+          "text": "Before-and-after text comparison of Bill 44 Sections 6 and 10 alongside interjurisdictional statutory baselines and unverified backlog/regulation gaps."
+        }
+      ],
+      "id": "provincial-police-bill-44-overview",
+      "summary": "Primary-record statutory audit of Alberta's Alberta Sheriffs Police Service governance reversal, retained operational-independence safeguards, fatality-inquiry overhaul, and cross-ministry health data-linking powers.",
+      "title": "Bill 44, OIC 116/2026 & Provincial Police Governance"
+    },
+    {
+      "blocks": [
+        {
+          "entry_ids": [
+            "b44-money-sheriffs-and-policing-budgets",
+            "b44-money-pwc-2021-forecast-and-pfm",
+            "b44-lead-updated-asps-costing-and-polling"
+          ],
+          "heading": "Budgets, Forecasts, and Municipal Cost-Sharing (Separate Bases)",
+          "text": "Keeps 2024-27 voted Government Estimates, 2021 PwC forecasts, federal RCMP cost-share rates, and municipal PFM contribution percentages strictly separate."
+        },
+        {
+          "entry_ids": [
+            "b44-claim-mandate-referendum-omission",
+            "b44-claim-government-rationale"
+          ],
+          "heading": "Public Mandate & Official Government Rationale",
+          "text": "Documents the December 2025 Alberta Next Panel polling and recommendation, the ten October 19, 2026 referendum questions, and Hansard explanations from Ministers Amery and Ellis."
+        }
+      ],
+      "id": "provincial-police-costs-and-mandate",
+      "summary": "Separate-basis financial reconciliation of Alberta Sheriffs and Contract Policing Estimates, the 2021 PwC forecast, the 2026-2031 Police Funding Model ramp, the Alberta Next Panel report, and ministerial accounts.",
+      "title": "Policing Budgets, Municipal Cost-Sharing & Referendum Mandate"
     }
   ],
-  "profile": "wiki-v1",
-  "scope": {
-    "coverage": "Public-record slice of Alberta's 2019–23 DynaLIFE community laboratory contract from the November 2025 Auditor General examination, AHS audited FY 2022–23 and 2023–24 financial statements, January 27, 2022 public AHS board minutes, and November 20, 2025 Alberta Hansard. Former-vendor operational claims remain privately held pending outreach.",
-    "id": "dynalife-community-lab-contract",
-    "research_as_of": "2026-11-25T13:02:21Z"
-  },
+  "profile": "wiki-v1-site",
+  "scopes": [
+    {
+      "coverage": "Public-record slice of Alberta's 2019–23 DynaLIFE community laboratory contract from the November 2025 Auditor General examination, AHS audited FY 2022–23 and 2023–24 financial statements, January 27, 2022 public AHS board minutes, November 20, 2025 Alberta Hansard, March 18, 2026 Main Estimates, November 2026 OAG recommendation status summaries, November 17, 2026 Public Accounts Committee testimony, and a reconciliation note on November 19, 2025 Global News / Canadian Press $109M headline reporting. Former-vendor operational claims remain privately held pending outreach.",
+      "id": "dynalife-community-lab-contract",
+      "research_as_of": "2026-11-27T08:05:00Z"
+    },
+    {
+      "coverage": "Primary-record audit of Alberta Bill 44 (163-page First Reading bill / 168-page PDF amending 20 statutes, Nov. 23, 2026), OIC 241/2025 & OIC 116/2026, 2005-2026 policing/inquiry/detention statutes (PC, NDP, Kenney & Smith eras), 2025-27 Government Estimates, 2021 PwC APPS Transition Study, Renewed Police Funding Model, Alberta Next Panel Report, Oct. 19, 2026 referendum OICs, and ON/QC/BC/MB primary statutory baselines. Active criminal proceedings and unretrieved stakeholder submissions remain privately excluded.",
+      "id": "provincial-police-bill-44-and-accountability",
+      "research_as_of": "2026-11-27T21:31:00Z"
+    }
+  ],
   "share_kits": [
+    {
+      "article_id": "provincial-police-bill-44-accountability",
+      "cited_entry_ids": [
+        "b44-claim-crown-corp-repeal",
+        "b44-claim-oversight-safeguards-retained",
+        "b44-claim-oic-116-board-overlap",
+        "b44-claim-fatality-mandatory-repeal",
+        "b44-claim-health-data-linking",
+        "b44-money-sheriffs-and-policing-budgets",
+        "b44-money-pwc-2021-forecast-and-pfm",
+        "b44-claim-mandate-referendum-omission",
+        "b44-claim-expanded-powers-timeline",
+        "b44-claim-interjurisdictional-baseline",
+        "b44-claim-government-rationale",
+        "b44-lead-fatality-backlog-and-regulations",
+        "b44-lead-updated-asps-costing-and-polling"
+      ],
+      "id": "bill-44-facebook-kit",
+      "images": [
+        {
+          "alt": "Dark charcoal editorial magazine cover titled Inside Alberta's Bill 44 Overhaul — File #02: Direct ministry police. Custody inquiries rewritten. $200.9M budget. Illustration shows a crown-stamped brass padlock clamping shut a leather courtroom inquiry ledger and a 7-point sheriff's star badge on a ministerial desk beside red-ribboned legislative binders and a wooden ballot box taped shut.",
+          "filename": "01-bill44-comic-cover.png",
+          "label": "Cover: Inside Alberta's Bill 44 Overhaul (File #02)"
+        },
+        {
+          "alt": "Editorial comic panel 1 of 4 titled Step 1: Dissolve the Firewall. A smiling official in a navy suit uses giant brass shears to cut down a glowing teal partition between a ministerial desk with an upright brass shield and a sheriff's dispatch console with a Stetson hat and microphone. Caption cites Bill 49 (2025), OIC 116/2026, and Bill 44 repealing corporate status while retaining Police Act s. 33.94(2) operational non-interference.",
+          "filename": "02-bill44-comic-panel-1.png",
+          "label": "Panel 1/4: Step 1 — Dissolve the Firewall"
+        },
+        {
+          "alt": "Editorial comic panel 2 of 4 titled Step 2: Rewrite Custody Inquiries. Bureaucrats pull heavy crimson velvet curtains shut across an open courtroom doorway in front of waiting citizens while an official locks red-wax-sealed scrolls inside a brass cabinet. Caption compares existing Fatality Inquiries Act s. 33(3) and BC's Coroners Act s. 18 with Bill 44 repealing mandatory custody inquiries in favour of unpublished Cabinet regulations with no s. 6 transitional clause.",
+          "filename": "03-bill44-comic-panel-2.png",
+          "label": "Panel 2/4: Step 2 — Rewrite Custody Inquiries"
+        },
+        {
+          "alt": "Editorial comic panel 3 of 4 titled Step 3: Skip Ballot, Ramp the Tab. At a rural prairie municipal counter with a grain elevator outside, a startled councillor faces towering ledger folders and gold coin stacks while an official wheels a chained ballot box out a side door. Caption notes 52% polling opposition in the Alberta Next Panel report, omission from all 10 Oct. 2026 ballot questions, $200.942M Sheriffs budget, and 22% to 30% rural cost-share ramp.",
+          "filename": "04-bill44-comic-panel-3.png",
+          "label": "Panel 3/4: Step 3 — Skip Ballot, Ramp the Tab"
+        },
+        {
+          "alt": "Editorial comic panel 4 of 4 titled Step 4: Link Health Data, No Consent. Glowing teal tubes siphon medical-cross folders out of hospital filing cabinets into a dark central server tower while a puzzled patient holds a blank unsigned clipboard. Caption summarizes Bill 44 Section 10 non-consensual health data disclosure, binding disclosure orders, and Cabinet HIA overrides alongside OIPC privacy filings and Ministers' Hansard rationale.",
+          "filename": "05-bill44-comic-panel-4.png",
+          "label": "Panel 4/4: Step 4 — Link Health Data, No Consent"
+        }
+      ],
+      "platform": "facebook",
+      "summary": "Download the 5 verified 1080×1080 satirical comic panels and copy the ready-to-post Facebook caption and First Comment backed by 23 primary statutory and budget records.",
+      "title": "Share Bill 44 on Facebook — 5-Panel Comic Kit (File #02)"
+    },
     {
       "article_id": "dynalife-lab-privatization",
       "cited_entry_ids": [
@@ -433,6 +1100,276 @@
   ],
   "sources": [
     {
+      "accessed_at": "2026-11-27T08:03:00Z",
+      "id": "b44-src-alberta-next-2025",
+      "published_at": null,
+      "publisher": "Government of Alberta",
+      "source_type": "official_record",
+      "source_version": "sha256:16b6ab01fe78b2f1ba7447a54eabdd243a50e262be8e040a3f5e53a32f74e8b7",
+      "title": "Alberta Next Panel Recommendations: Final Report",
+      "url": "https://open.alberta.ca/dataset/29190310-bf26-401a-b818-f35fbf7794d8/resource/2e6232ef-9116-4392-a1c6-05d6afd90367/download/alberta-next-final-panel-report-2025-12.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:01:00Z",
+      "id": "b44-src-bc-coroners-act",
+      "published_at": null,
+      "publisher": "King's Printer for British Columbia",
+      "source_type": "legislation",
+      "source_version": "sha256:8d2e116c4eb8d6f9837d09c98df35e22698b6c1fb74df9dd0a3413d3fcd2d6ac",
+      "title": "Coroners Act, SBC 2007, c 15 (British Columbia)",
+      "url": "https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/07015_01"
+    },
+    {
+      "accessed_at": "2026-11-27T08:00:00Z",
+      "id": "b44-src-bill15-2026",
+      "published_at": null,
+      "publisher": "Legislative Assembly of Alberta",
+      "source_type": "legislation",
+      "source_version": "sha256:4531b7a39bf3e5b87a10ef36888e477472bf8879174edf35cdfb1d10a6c8ff1d",
+      "title": "Bill 15: Public Safety and Emergency Services Statutes Amendment Act, 2026",
+      "url": "https://docs.assembly.ab.ca/LADDAR_files/docs/bills/bill/legislature_31/session_2/20251023_bill-015.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:01:00Z",
+      "id": "b44-src-bill4-2025",
+      "published_at": null,
+      "publisher": "Legislative Assembly of Alberta",
+      "source_type": "legislation",
+      "source_version": "sha256:d64916537c60e2ad8531864ddb155a153a84c87ed2f91045772d028f9723aac4",
+      "title": "Bill 4: Public Safety and Emergency Services Statutes Amendment Act, 2025 (No. 2)",
+      "url": "https://docs.assembly.ab.ca/LADDAR_files/docs/bills/bill/legislature_31/session_2/20251023_bill-004.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:00:00Z",
+      "id": "b44-src-bill44-2026",
+      "published_at": "2026-11-23",
+      "publisher": "Legislative Assembly of Alberta",
+      "source_type": "legislation",
+      "source_version": "sha256:169646278a37ceff692b5543287d98bae87fd616c019b2e6f609ebbb1ad78682",
+      "title": "Bill 44: Justice, Public Safety and Information Statutes Amendment Act, 2026 (First Reading)",
+      "url": "https://docs.assembly.ab.ca/LADDAR_files/docs/bills/bill/legislature_31/session_2/20251023_bill-044.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:02:00Z",
+      "id": "b44-src-cia-2025",
+      "published_at": null,
+      "publisher": "Alberta King's Printer",
+      "source_type": "legislation",
+      "source_version": "sha256:a3edc74bb293c2ecfa2667aacaa614ccaedd67a077a6cee25680541f2be63978",
+      "title": "Compassionate Intervention Act, SA 2025, c C-21.5 (current as of June 11, 2025)",
+      "url": "https://kings-printer.alberta.ca/documents/Acts/C21P5.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:02:00Z",
+      "id": "b44-src-cida-2020",
+      "published_at": null,
+      "publisher": "Alberta King's Printer",
+      "source_type": "legislation",
+      "source_version": "sha256:330f1a6f8f9bab5b7f86944a4335dfb2155c461acf36c8488f8cb84b40821310",
+      "title": "Critical Infrastructure Defence Act, SA 2020, c C-32.7 (current as of May 15, 2025)",
+      "url": "https://kings-printer.alberta.ca/documents/Acts/C32P7.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:04:00Z",
+      "id": "b44-src-estimates-2025-26",
+      "published_at": null,
+      "publisher": "Government of Alberta (Treasury Board and Finance)",
+      "source_type": "financial_disclosure",
+      "source_version": "sha256:e2494812a4c4d6264ead501b3a531ef7f73274a3b971c3e8d88e3a69bd7f845b",
+      "title": "2025-26 Government Estimates: General Revenue Fund",
+      "url": "https://open.alberta.ca/dataset/65514c30-e9f9-4951-9bae-7134edbe293c/resource/58677c6f-ecff-4175-9721-21e9c4fce815/download/budget-2025-estimates-government-2025-26.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:04:00Z",
+      "id": "b44-src-estimates-2026-27",
+      "published_at": null,
+      "publisher": "Government of Alberta (Treasury Board and Finance)",
+      "source_type": "financial_disclosure",
+      "source_version": "sha256:d91601ecf5d361d2ea28add2391d9cf1349862d5fa1f549724123feccc7f7490",
+      "title": "2026-27 Government Estimates: General Revenue Fund",
+      "url": "https://open.alberta.ca/dataset/65514c30-e9f9-4951-9bae-7134edbe293c/resource/71713b5f-01ab-4ec5-9c01-7e49aec66fc1/download/budget-2026-estimates-government-2026-27.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:02:00Z",
+      "id": "b44-src-fatality-act",
+      "published_at": null,
+      "publisher": "Alberta King's Printer",
+      "source_type": "legislation",
+      "source_version": "sha256:1523c1f843b8d9cb6580dd16488fa21cc0c49d7b6fac37ad2aa077c1cba0131f",
+      "title": "Fatality Inquiries Act, RSA 2000, c F-9 (Office Consolidation, current as of December 18, 2025)",
+      "url": "https://kings-printer.alberta.ca/documents/Acts/F09.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:00:00Z",
+      "id": "b44-src-hansard-nov23-2026",
+      "published_at": "2026-11-23",
+      "publisher": "Legislative Assembly of Alberta",
+      "source_type": "official_record",
+      "source_version": "sha256:3eb548dc0633d89ed153b4f607b6ab1cf28c42dd9a242934303e7332f21c537f",
+      "title": "Alberta Hansard, Monday afternoon, November 23, 2026 (31st Legislature, Second Session, Day 71)",
+      "url": "https://docs.assembly.ab.ca/LADDAR_files/docs/hansards/han/legislature_31/session_2/20261123_1330_01_han.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:01:00Z",
+      "id": "b44-src-hansard-nov25-2026",
+      "published_at": "2026-11-25",
+      "publisher": "Legislative Assembly of Alberta",
+      "source_type": "official_record",
+      "source_version": "sha256:b49bc0358e7b4398a4fe23cab50a02bd7e77fa853eb3d98b6d054f98c1715b24",
+      "title": "Alberta Hansard, Wednesday afternoon, November 25, 2026 (31st Legislature, Second Session)",
+      "url": "https://docs.assembly.ab.ca/LADDAR_files/docs/hansards/han/legislature_31/session_2/20261125_1330_01_han.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:02:00Z",
+      "id": "b44-src-iaps-reg-2025",
+      "published_at": null,
+      "publisher": "Alberta King's Printer",
+      "source_type": "legislation",
+      "source_version": "sha256:aba6bfcc7cede244aa908805df64245a563335a44f9591a3a79075a6e7a4d6d8",
+      "title": "Independent Agency Police Service Regulation, AR 163/2025 (as amended by AR 72/2026)",
+      "url": "https://kings-printer.alberta.ca/documents/Regs/2025_163.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T21:31:00Z",
+      "id": "b44-src-mb-fatality-act",
+      "published_at": null,
+      "publisher": "King's Printer for Manitoba",
+      "source_type": "legislation",
+      "source_version": "sha256:1bc44be8fa4adea029781a9d7c6f8dac0c8560aee28bfd5441695f8a31c16c6c",
+      "title": "The Fatality Inquiries Act, CCSM c F52",
+      "url": "https://web2.gov.mb.ca/laws/statutes/ccsm/f052.php?lang=en"
+    },
+    {
+      "accessed_at": "2026-11-27T08:03:00Z",
+      "id": "b44-src-oic-109-2026",
+      "published_at": "2026-03-31",
+      "publisher": "Alberta King's Printer",
+      "source_type": "legislation",
+      "source_version": "sha256:e1ebeb0e530b6dda4939a41a67931137dcbf066110b8bb4907ce109030f3fe15",
+      "title": "Order in Council 109/2026 (Constitutional Referendum Questions for October 19, 2026)",
+      "url": "https://kings-printer.alberta.ca/documents/Orders/Orders_in_Council/2026/2026_109.html"
+    },
+    {
+      "accessed_at": "2026-11-27T08:03:00Z",
+      "id": "b44-src-oic-110-2026",
+      "published_at": "2026-03-31",
+      "publisher": "Alberta King's Printer",
+      "source_type": "legislation",
+      "source_version": "sha256:9ba773fa6f808c443cce9d8d4fdbf0e8ac70d513ee47c8982281177c2f38ba16",
+      "title": "Order in Council 110/2026 (Non-Constitutional Referendum Questions for October 19, 2026)",
+      "url": "https://kings-printer.alberta.ca/documents/Orders/Orders_in_Council/2026/2026_110.html"
+    },
+    {
+      "accessed_at": "2026-11-27T08:00:00Z",
+      "id": "b44-src-oic-116-2026",
+      "published_at": "2026-04-16",
+      "publisher": "Alberta King's Printer",
+      "source_type": "legislation",
+      "source_version": "sha256:133681529928558dc0a7fe376cc5901dc507dbd64bc4ed614d6e4b07d7f1ea98",
+      "title": "Order in Council 116/2026 (AR 72/2026): Independent Agency Police Service Amendment Regulation",
+      "url": "https://kings-printer.alberta.ca/documents/Orders/Orders_in_Council/2026/2026_116.html"
+    },
+    {
+      "accessed_at": "2026-11-27T08:03:00Z",
+      "id": "b44-src-oic-160-2026",
+      "published_at": "2026-05-28",
+      "publisher": "Alberta King's Printer",
+      "source_type": "legislation",
+      "source_version": "sha256:6ac68d61f15a203e22433a8ecbe6886eb7510ca76cd30e820493ecf68d6992af",
+      "title": "Order in Council 160/2026 (Choice Referendum Question for October 19, 2026)",
+      "url": "https://kings-printer.alberta.ca/documents/Orders/Orders_in_Council/2026/2026_160.html"
+    },
+    {
+      "accessed_at": "2026-11-27T21:31:00Z",
+      "id": "b44-src-oic-241-2025",
+      "published_at": "2025-07-02",
+      "publisher": "Alberta King's Printer",
+      "source_type": "legislation",
+      "source_version": "sha256:ae686ff5b3375ce30a36bc0904a36aa538779dc061c70cf46ab0d168dace0b2d",
+      "title": "Order in Council 241/2025 (AR 163/2025): Independent Agency Police Service Regulation",
+      "url": "https://kings-printer.alberta.ca/documents/Orders/Orders_in_Council/2025/2025_241.html"
+    },
+    {
+      "accessed_at": "2026-11-27T21:31:00Z",
+      "id": "b44-src-on-coroners-act",
+      "published_at": null,
+      "publisher": "King's Printer for Ontario",
+      "source_type": "legislation",
+      "source_version": "sha256:ada3dfa76258edb6989b3ef98b963e6487c70158801333084b3ed1c7e002d38d",
+      "title": "Coroners Act, RSO 1990, c C.37",
+      "url": "https://www.ontario.ca/laws/docs/90c37_e.doc"
+    },
+    {
+      "accessed_at": "2026-11-27T21:31:00Z",
+      "id": "b44-src-on-cspa-2019",
+      "published_at": null,
+      "publisher": "King's Printer for Ontario",
+      "source_type": "legislation",
+      "source_version": "sha256:a9008c6a9b742b2148f1d9c41f53c516db17e5e9b144d5898e0edba0e87c7448",
+      "title": "Community Safety and Policing Act, 2019, SO 2019, c 1, Sched 1",
+      "url": "https://www.ontario.ca/laws/docs/19c01_e.doc"
+    },
+    {
+      "accessed_at": "2026-11-27T08:03:00Z",
+      "id": "b44-src-pfm-factsheet-2025",
+      "published_at": "2025-12-18",
+      "publisher": "Government of Alberta (Public Safety and Emergency Services)",
+      "source_type": "official_record",
+      "source_version": "sha256:fcd9107a95bbc83bad89ff5b9996be9f7eba1955d80cbd7c6ddb56d427f765be",
+      "title": "Renewed Police Funding Model: Information for Municipalities",
+      "url": "https://open.alberta.ca/dataset/5091d549-fab4-4ae0-b86c-d817056eedcb/resource/cf9c5a89-cdbd-4df8-8a66-38153bc0755c/download/pses-renewed-police-funding-model-factsheet.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:02:00Z",
+      "id": "b44-src-police-act",
+      "published_at": null,
+      "publisher": "Alberta King's Printer",
+      "source_type": "legislation",
+      "source_version": "sha256:ff56e3ef84140b6445bfe07acb22a03c626bf28eeb4c0bbe7ae066dfb347de48",
+      "title": "Police Act, RSA 2000, c P-17 (Office Consolidation)",
+      "url": "https://kings-printer.alberta.ca/documents/Acts/P17.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:03:00Z",
+      "id": "b44-src-pses-bp-2026-29",
+      "published_at": null,
+      "publisher": "Government of Alberta (Public Safety and Emergency Services)",
+      "source_type": "official_record",
+      "source_version": "sha256:f0709c424c1c607bcdd03e062a90aa782a3d2276d505c63be05f9d25ca919398",
+      "title": "Public Safety and Emergency Services Business Plan 2026-29",
+      "url": "https://open.alberta.ca/dataset/2073266e-e717-4ef1-9080-7fe50ddff14f/resource/7e9a4589-b701-4ba4-a052-74d9ca7cfaa3/download/pses-business-plan-2026-29.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:03:00Z",
+      "id": "b44-src-pwc-apps-2021",
+      "published_at": null,
+      "publisher": "PricewaterhouseCoopers LLP / Alberta Justice and Solicitor General",
+      "source_type": "official_record",
+      "source_version": "sha256:02a918396516aebd6f9aad2a8f3644e219248dcabba137a98425f68f35cc6c1e",
+      "title": "Alberta Provincial Police Service Transition Study: Final Report",
+      "url": "https://open.alberta.ca/dataset/a1bfad66-d301-4a8f-9865-ae6e7d25a31a/resource/5afc1580-f9c6-425e-b358-14dffb660da9/download/jsg-apps-transition-study-final-report-2021.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:05:00Z",
+      "id": "b44-src-qc-coroners-act",
+      "published_at": null,
+      "publisher": "LégisQuébec (Éditeur officiel du Québec)",
+      "source_type": "legislation",
+      "source_version": "sha256:127d296040d7e8c029a4b62877be65edff369543f4933d00e8a939ffa1d4a391",
+      "title": "Coroners Act, CQLR c C-68.01 (Quebec)",
+      "url": "https://www.legisquebec.gouv.qc.ca/fr/document/lc/C-68.01?langCont=en"
+    },
+    {
+      "accessed_at": "2026-11-27T08:05:00Z",
+      "id": "b44-src-qc-police-act",
+      "published_at": null,
+      "publisher": "LégisQuébec (Éditeur officiel du Québec)",
+      "source_type": "legislation",
+      "source_version": "sha256:d6bba0b25490b1d99d1fbf7205152eeaf14dfde7391cb192f2512d6da1b7e493",
+      "title": "Police Act, CQLR c P-13.1 (Quebec)",
+      "url": "https://www.legisquebec.gouv.qc.ca/fr/document/lc/P-13.1?langCont=en"
+    },
+    {
       "accessed_at": "2026-11-25T13:02:21Z",
       "id": "dynalife-source-ahs23",
       "published_at": null,
@@ -463,6 +1400,26 @@
       "url": "https://www.albertahealthservices.ca/assets/about/board/ahs-brd-2022-01-27-minutes.pdf"
     },
     {
+      "accessed_at": "2026-11-27T08:05:00Z",
+      "id": "dynalife-source-estimates-mar26",
+      "published_at": "2026-03-18",
+      "publisher": "Legislative Assembly of Alberta",
+      "source_type": "official_record",
+      "source_version": "sha256:b5985103ca813dd9d3153b50aac0c04e6c93e9ba67dc0cb360892a791b169e5e",
+      "title": "Standing Committee on Families and Communities, Main Estimates, Transcript 31-2-11",
+      "url": "https://docs.assembly.ab.ca/LADDAR_files/docs/committees/FC/legislature_31/session_2/20260318_1530_01_fc.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:05:00Z",
+      "id": "dynalife-source-globalnews-2025",
+      "published_at": "2025-11-19",
+      "publisher": "Global News (The Canadian Press)",
+      "source_type": "secondary_reporting",
+      "source_version": "published:2025-11-19T23:14:27Z;modified:2025-11-20T02:15:57Z",
+      "title": "Alberta’s auditor general says taxpayers lost $109M in DynaLife lab testing debacle",
+      "url": "https://globalnews.ca/news/11533997/alberta-auditor-general-dynalife-ucp/"
+    },
+    {
       "accessed_at": "2026-11-25T13:02:21Z",
       "id": "dynalife-source-hansard-2025",
       "published_at": null,
@@ -481,6 +1438,36 @@
       "source_version": "sha256:2b1f5bb4b097eca0239dff2c6e5f31fd345aed46d2f0d84af641050677f662af",
       "title": "An Examination of Community Laboratory Services (Contract with DynaLIFE)",
       "url": "https://www.oag.ab.ca/wp-content/uploads/2025/11/2025-An-Examination-of-Community-Lab-ServicesContract-with-DynaLIFE.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:05:00Z",
+      "id": "dynalife-source-oag-hospital-nov26",
+      "published_at": "2026-11-16",
+      "publisher": "Office of the Auditor General of Alberta",
+      "source_type": "official_record",
+      "source_version": "sha256:7af5f547a64b9c429daad03a4d131936a8faddf9904f8e6c5a170d8f9e87da5c",
+      "title": "Hospital and Surgical Health Services — Status of recommendations",
+      "url": "https://www.oag.ab.ca/wp-content/uploads/2025/11/Hospital-and-Surgical-Health-Services-Summary.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:05:00Z",
+      "id": "dynalife-source-oag-primary-nov26",
+      "published_at": null,
+      "publisher": "Office of the Auditor General of Alberta",
+      "source_type": "official_record",
+      "source_version": "sha256:540af97cb57023998c3f0deaa816d4c3319737f1a56156d82f98838f0fbe74b4",
+      "title": "Primary and Preventative Health Services — Status of recommendations",
+      "url": "https://www.oag.ab.ca/wp-content/uploads/2025/11/Primary-and-Preventative-Health-Services-Summary.pdf"
+    },
+    {
+      "accessed_at": "2026-11-27T08:05:00Z",
+      "id": "dynalife-source-pac-nov26",
+      "published_at": "2026-11-17",
+      "publisher": "Legislative Assembly of Alberta",
+      "source_type": "official_record",
+      "source_version": "sha256:4024190c79c6083b4a109218708b5d29663dc78fb5e175d7cc0f5b0f2af0d803",
+      "title": "Standing Committee on Public Accounts (Ministry of Hospital and Surgical Health Services), Transcript 31-2-14",
+      "url": "https://docs.assembly.ab.ca/LADDAR_files/docs/committees/PA/legislature_31/session_2/20261117_0900_01_pa.pdf"
     }
   ]
 }

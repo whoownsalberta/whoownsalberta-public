@@ -656,6 +656,37 @@ input[type="search"] {
   margin: 0;
 }
 
+/* Multi-investigation card grid */
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.15rem;
+  margin: 1rem 0 2rem;
+}
+
+.article-card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--accent);
+  border-radius: 0.45rem;
+  padding: 1.15rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-card h3 {
+  margin: 0.25rem 0 0.5rem;
+}
+
+.article-card h3 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.article-card h3 a:hover {
+  color: var(--crimson);
+}
+
 [hidden] {
   display: none !important;
 }
