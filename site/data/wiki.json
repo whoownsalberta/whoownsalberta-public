@@ -1,4 +1,27 @@
 {
+  "articles": [
+    {
+      "byline": "WhoOwnsAlberta Investigative Desk",
+      "cited_entry_ids": [
+        "dynalife-claim-original-commitment",
+        "dynalife-claim-extra-cost",
+        "dynalife-claim-acquisition-cash",
+        "dynalife-claim-minister-direction",
+        "dynalife-claim-audit-access-dispute",
+        "dynalife-lead-gross-payments-and-payees",
+        "dynalife-claim-government-rationale",
+        "dynalife-claim-business-case",
+        "dynalife-claim-rfp-counteraccount",
+        "dynalife-claim-board-authority"
+      ],
+      "deck": "How ministerial direction drove a $4.8-billion community lab outsourcing commitment without a documented business case—leaving taxpayers with an estimated $77 million in extra costs, a buyout cheque, and restricted audit records.",
+      "featured": true,
+      "id": "dynalife-lab-privatization",
+      "kicker": "Health Care & Public Money",
+      "published_at": null,
+      "title": "No Documented Business Case, One Bidder, and a $31.5-Million Buyback: Inside Alberta's DynaLIFE Reversal"
+    }
+  ],
   "entries": [
     {
       "as_of": "2026-11-25T13:02:21Z",
