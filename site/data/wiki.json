@@ -3,6 +3,30 @@
     {
       "byline": "WhoOwnsAlberta Investigative Desk",
       "cited_entry_ids": [
+        "b44-claim-crown-corp-repeal",
+        "b44-claim-government-rationale",
+        "b44-claim-fatality-mandatory-repeal",
+        "b44-claim-health-data-linking",
+        "b44-money-sheriffs-and-policing-budgets",
+        "b44-claim-interjurisdictional-baseline",
+        "b44-claim-oversight-safeguards-retained",
+        "b44-lead-fatality-backlog-and-regulations",
+        "b44-money-pwc-2021-forecast-and-pfm",
+        "b44-lead-updated-asps-costing-and-polling",
+        "b44-claim-expanded-powers-timeline",
+        "b44-claim-oic-116-board-overlap",
+        "b44-claim-mandate-referendum-omission"
+      ],
+      "deck": "A plain-English guide to Alberta's 163-page omnibus bill: moving the Sheriffs Police onto the government payroll, ending automatic public inquiries into deaths in custody, sharing health records without consent, and ramping policing budgets without a ballot question.",
+      "featured": true,
+      "id": "bill-44-plain-english-guide",
+      "kicker": "Policing & Accountability · Plain-English Guide",
+      "published_at": "2026-11-27",
+      "title": "What Bill 44 Actually Changes: Police Control, Custody Inquiries, Your Medical Records, and the $200M Tab"
+    },
+    {
+      "byline": "WhoOwnsAlberta Investigative Desk",
+      "cited_entry_ids": [
         "dynalife-claim-original-commitment",
         "dynalife-claim-extra-cost",
         "dynalife-claim-acquisition-cash",
@@ -41,11 +65,11 @@
         "b44-lead-fatality-backlog-and-regulations"
       ],
       "deck": "Primary statutory text and Government Estimates separate what Alberta's 163-page First Reading omnibus bill (168-page PDF amending 20 statutes) changes—from Crown-corp repeal to ending mandatory in-custody fatality inquiries and non-consensual health data linking—from the oversight guardrails it leaves intact.",
-      "featured": true,
+      "featured": false,
       "id": "provincial-police-bill-44-accountability",
       "kicker": "Policing & Accountability · Primary Statutory Audit",
       "published_at": "2026-11-27",
-      "title": "Inside Bill 44: Alberta's Provincial Police Reversal, Custodial Death Inquiries, and $200M Sheriffs Budget"
+      "title": "Inside Bill 44: Alberta's Provincial Police Reversal, Custodial Death Inquiries, and $200M Sheriffs Budget (Statutory Audit)"
     }
   ],
   "entries": [
@@ -1003,7 +1027,7 @@
   ],
   "share_kits": [
     {
-      "article_id": "provincial-police-bill-44-accountability",
+      "article_id": "bill-44-plain-english-guide",
       "cited_entry_ids": [
         "b44-claim-crown-corp-repeal",
         "b44-claim-oversight-safeguards-retained",
