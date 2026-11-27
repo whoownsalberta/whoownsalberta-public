@@ -35,6 +35,13 @@ WIKI_V1_FIELDS = {
     "profile", "mode", "scope_id", "factual_digest", "publication_digest",
     "renderer_digest", "decision_digests", "output_digests",
 }
+WIKI_V1_SITE_FIELDS = {
+    "profile", "mode", "scopes", "renderer_digest",
+    "decision_digests", "output_digests",
+}
+WIKI_V1_SITE_SCOPE_FIELDS = {
+    "scope_id", "factual_digest", "publication_digest",
+}
 FORBIDDEN_MARKERS = (
     "PRIVATE PREVIEW — NOT FOR PUBLICATION",
     "synthetic_fixture",
@@ -86,24 +93,49 @@ def verify_output_hashes(site, found, outputs):
 
 
 def verify_wiki_v1(site, found, dirs, manifest):
-    if set(manifest) != WIKI_V1_FIELDS:
-        fail("wiki-v1 manifest: unexpected fields")
-    if manifest["mode"] != "public":
-        fail(f"wiki-v1 manifest: non-public mode {manifest['mode']!r}")
-    scope_id = manifest["scope_id"]
-    if not isinstance(scope_id, str) or not ID.fullmatch(scope_id):
-        fail("wiki-v1 manifest: invalid scope_id")
-    for field in ("factual_digest", "publication_digest", "renderer_digest"):
-        check_sha(manifest[field], field)
+    profile = manifest["profile"]
+    if profile == "wiki-v1":
+        if set(manifest) != WIKI_V1_FIELDS:
+            fail("wiki-v1 manifest: unexpected fields")
+        if manifest["mode"] != "public":
+            fail(f"wiki-v1 manifest: non-public mode {manifest['mode']!r}")
+        scope_id = manifest["scope_id"]
+        if not isinstance(scope_id, str) or not ID.fullmatch(scope_id):
+            fail("wiki-v1 manifest: invalid scope_id")
+        for field in ("factual_digest", "publication_digest", "renderer_digest"):
+            check_sha(manifest[field], field)
+        scope_ids = [scope_id]
+    elif profile == "wiki-v1-site":
+        if set(manifest) != WIKI_V1_SITE_FIELDS:
+            fail("wiki-v1-site manifest: unexpected fields")
+        if manifest["mode"] != "public":
+            fail(f"wiki-v1-site manifest: non-public mode {manifest['mode']!r}")
+        check_sha(manifest["renderer_digest"], "renderer_digest")
+        scopes = manifest["scopes"]
+        if not isinstance(scopes, list) or len(scopes) < 2:
+            fail("wiki-v1-site manifest: requires at least 2 scopes")
+        scope_ids = []
+        for idx, item in enumerate(scopes):
+            if not isinstance(item, dict) or set(item) != WIKI_V1_SITE_SCOPE_FIELDS:
+                fail(f"wiki-v1-site manifest: invalid scope entry at index {idx}")
+            sid = item["scope_id"]
+            if not isinstance(sid, str) or not ID.fullmatch(sid):
+                fail(f"wiki-v1-site manifest: invalid scope_id at index {idx}")
+            check_sha(item["factual_digest"], f"scopes[{idx}].factual_digest")
+            check_sha(item["publication_digest"], f"scopes[{idx}].publication_digest")
+            scope_ids.append(sid)
+        if len(scope_ids) != len(set(scope_ids)) or scope_ids != sorted(scope_ids):
+            fail("wiki-v1-site manifest: scopes must have sorted unique scope_ids")
+    else:
+        fail(f"manifest: unexpected profile {profile!r}")
 
     digest_map(manifest["decision_digests"], "decision_digests")
-    expected_decisions = {
-        f"factual:{scope_id}",
-        f"publication:{scope_id}",
-        "renderer:wiki-v1-renderer",
-    }
+    expected_decisions = {"renderer:wiki-v1-renderer"}
+    for sid in scope_ids:
+        expected_decisions.add(f"factual:{sid}")
+        expected_decisions.add(f"publication:{sid}")
     if set(manifest["decision_digests"]) != expected_decisions:
-        fail("wiki-v1 manifest: decision_digests must match exact slice and renderer keys")
+        fail(f"{profile} manifest: decision_digests must match exact slice and renderer keys")
 
     digest_map(manifest["output_digests"], "output_digests")
     outputs = manifest["output_digests"]
@@ -174,7 +206,7 @@ def verify_site(site):
             fail("holding page: digest mismatch")
         return
 
-    if profile == "wiki-v1":
+    if profile in ("wiki-v1", "wiki-v1-site"):
         verify_wiki_v1(site, found, dirs, manifest)
         return
 

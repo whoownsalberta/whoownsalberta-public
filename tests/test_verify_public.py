@@ -199,6 +199,92 @@ class WikiV1SiteTests(unittest.TestCase):
             verify_site(self.site)
 
 
+class WikiV1MultiTopicSiteTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.site = Path(self.temp.name) / "site"
+        for sub in ("articles", "topics", "entries", "sources", "data", "share/assets"):
+            (self.site / sub).mkdir(parents=True)
+        files = {
+            "index.html": "<h1>Investigations &amp; Research Wiki</h1>",
+            "search.html": "<h1>Search</h1>",
+            "style.css": "body { color: #111; }",
+            "og-card.jpg": b"\xff\xd8\xff\xe0" + b"\x00" * 16,
+            "articles/alpha-story.html": "<article><h1>Alpha</h1></article>",
+            "articles/beta-story.html": "<article><h1>Beta</h1></article>",
+            "topics/alpha-topic.html": "<h1>Alpha Topic</h1>",
+            "topics/beta-topic.html": "<h1>Beta Topic</h1>",
+            "entries/alpha-entry.html": "<h1>Alpha Entry</h1>",
+            "entries/beta-entry.html": "<h1>Beta Entry</h1>",
+            "sources/alpha-source.html": "<h1>Alpha Source</h1>",
+            "sources/beta-source.html": "<h1>Beta Source</h1>",
+            "share/alpha-kit.html": "<h1>Alpha Share Kit</h1>",
+            "share/assets/01-alpha.png": b"\x89PNG\r\n\x1a\n" + b"\x00" * 16,
+            "data/wiki.json": '{"profile":"wiki-v1-site","mode":"public","entries":[]}\n',
+            "data/entries.csv": "id,title\nalpha-entry,Alpha Entry\n",
+            "data/sources.csv": "id,title\nalpha-source,Alpha Source\n",
+        }
+        output_digests = {}
+        for rel, content in files.items():
+            path = self.site / rel
+            if isinstance(content, bytes):
+                path.write_bytes(content)
+            else:
+                path.write_text(content, encoding="utf-8")
+            output_digests[rel] = hashlib.sha256(path.read_bytes()).hexdigest()
+        self.manifest = {
+            "profile": "wiki-v1-site",
+            "mode": "public",
+            "scopes": [
+                {"scope_id": "alpha-scope", "factual_digest": SHA, "publication_digest": SHA},
+                {"scope_id": "beta-scope", "factual_digest": SHA, "publication_digest": SHA},
+            ],
+            "renderer_digest": SHA,
+            "decision_digests": {
+                "factual:alpha-scope": SHA,
+                "publication:alpha-scope": SHA,
+                "factual:beta-scope": SHA,
+                "publication:beta-scope": SHA,
+                "renderer:wiki-v1-renderer": SHA,
+            },
+            "output_digests": output_digests,
+        }
+        self.save()
+
+    def save(self):
+        (self.site / "manifest.json").write_text(json.dumps(self.manifest), encoding="utf-8")
+
+    def test_valid_wiki_v1_site_artifact(self):
+        verify_site(self.site)
+
+    def test_single_scope_in_site_profile_is_rejected(self):
+        self.manifest["scopes"] = [self.manifest["scopes"][0]]
+        del self.manifest["decision_digests"]["factual:beta-scope"]
+        del self.manifest["decision_digests"]["publication:beta-scope"]
+        self.save()
+        with self.assertRaisesRegex(ValueError, "requires at least 2 scopes"):
+            verify_site(self.site)
+
+    def test_unsorted_or_duplicate_scopes_are_rejected(self):
+        self.manifest["scopes"] = list(reversed(self.manifest["scopes"]))
+        self.save()
+        with self.assertRaisesRegex(ValueError, "sorted unique scope_ids"):
+            verify_site(self.site)
+
+    def test_missing_scope_decision_is_rejected(self):
+        del self.manifest["decision_digests"]["publication:beta-scope"]
+        self.save()
+        with self.assertRaisesRegex(ValueError, "exact slice and renderer keys"):
+            verify_site(self.site)
+
+    def test_preview_mode_in_site_profile_is_rejected(self):
+        self.manifest["mode"] = "preview"
+        self.save()
+        with self.assertRaisesRegex(ValueError, "non-public mode"):
+            verify_site(self.site)
+
+
 class VerifyPublicV1Tests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
