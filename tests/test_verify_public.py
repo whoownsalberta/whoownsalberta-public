@@ -54,6 +54,34 @@ class WikiV1SiteTests(unittest.TestCase):
     def test_valid_wiki_v1_artifact(self):
         verify_site(self.site)
 
+    def test_wiki_v1_with_open_data_exports(self):
+        (self.site / "data").mkdir()
+        data_files = {
+            "data/wiki.json": '{"profile":"wiki-v1","mode":"public","entries":[]}\n',
+            "data/entries.csv": "id,title\nexample-entry,Entry\n",
+            "data/sources.csv": "id,title\nexample-source,Source\n",
+        }
+        for rel, content in data_files.items():
+            path = self.site / rel
+            path.write_text(content, encoding="utf-8")
+            self.manifest["output_digests"][rel] = hashlib.sha256(path.read_bytes()).hexdigest()
+        self.save()
+        verify_site(self.site)
+
+        # Disallowed file inside data/ is rejected
+        (self.site / "data/private.json").write_text("{}", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "unlisted public file"):
+            verify_site(self.site)
+        (self.site / "data/private.json").unlink()
+
+        # Preview marker inside CSV export is rejected
+        bad_csv = self.site / "data/entries.csv"
+        bad_csv.write_text("PRIVATE PREVIEW — NOT FOR PUBLICATION\n", encoding="utf-8")
+        self.manifest["output_digests"]["data/entries.csv"] = hashlib.sha256(bad_csv.read_bytes()).hexdigest()
+        self.save()
+        with self.assertRaisesRegex(ValueError, "forbidden preview/synthetic marker"):
+            verify_site(self.site)
+
     def test_preview_mode_is_rejected(self):
         self.manifest["mode"] = "preview"
         self.save()

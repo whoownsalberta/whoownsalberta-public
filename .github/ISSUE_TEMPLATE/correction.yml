@@ -1,0 +1,40 @@
+name: Correction or missing context
+description: Report a factual error, outdated status, calculation issue, or missing official counterevidence on a published page.
+title: "[Correction] "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping keep WhoOwnsAlberta.info accurate. Every material correction is checked against the primary record and logged transparently.
+        **Do not post private personal contact details, medical information, or copyrighted full-text articles.**
+  - type: input
+    id: target
+    attributes:
+      label: Published page or entry ID
+      placeholder: e.g., entries/dynalife-claim-extra-cost.html or topics/dynalife-money-trail.html
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What needs to be corrected or updated?
+      description: Describe the exact statement, figure, date, or missing countercontext.
+    validations:
+      required: true
+  - type: textarea
+    id: primary_source
+    attributes:
+      label: Primary source URL and exact page/section locator
+      description: Link to the official record (audit, financial statement, Hansard, Order in Council, court decision, etc.) and pinpoint where the correction is verified.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Safety checks
+      options:
+        - label: This submission contains no private addresses, personal contact details, or non-public medical/employee information.
+          required: true
+        - label: This submission links to public sources rather than pasting copyrighted full-text articles.
+          required: true

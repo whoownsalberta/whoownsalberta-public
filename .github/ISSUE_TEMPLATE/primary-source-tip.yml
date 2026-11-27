@@ -1,0 +1,40 @@
+name: Primary-source tip or open-question lead
+description: Point researchers to a verifiable official public record or help answer an open question on the wiki.
+title: "[Source tip] "
+labels: ["source-tip"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tips are reviewed as unverified leads until researchers independently reopen and verify the primary document.
+        **Do not post personal addresses, private contact details, medical records, leaked/non-public private data, or unsubstantiated allegations.**
+  - type: input
+    id: topic
+    attributes:
+      label: Topic or open question addressed
+      placeholder: e.g., DynaLIFE contract terms, Alberta Blue Book FY 2020-21 gap, health procurement
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Official source URL, publisher, date, and pinpoint locator
+      description: Provide the public URL and exact page, section, row, or timestamp.
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: What does this record document, and what are its limits?
+      description: State plainly what the record shows and any important context or caveats.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Safety checks
+      options:
+        - label: This tip points to publicly available records and contains no private personal or medical data.
+          required: true
+        - label: I understand tips are treated as unverified leads until independently verified.
+          required: true

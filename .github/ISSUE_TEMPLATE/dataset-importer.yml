@@ -1,0 +1,39 @@
+name: Open-data dataset or importer proposal
+description: Propose a reproducible importer or public dataset (e.g., Alberta Open Government, Elections Alberta, Lobbyist Registry).
+title: "[Dataset] "
+labels: ["open-data"]
+body:
+  - type: input
+    id: dataset_name
+    attributes:
+      label: Dataset name & publisher
+      placeholder: e.g., Alberta General Revenue Fund Blue Book (Treasury Board and Finance)
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Official catalogue / download URL
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: Reuse licence or terms of use
+      placeholder: e.g., Open Government Licence - Alberta
+    validations:
+      required: true
+  - type: textarea
+    id: coverage
+    attributes:
+      label: Coverage window, accounting basis, and known caveats
+      description: Note missing years, thresholds, exclusions, or identity-matching limits.
+    validations:
+      required: true
+  - type: textarea
+    id: schema
+    attributes:
+      label: Proposed fields / reproducible pipeline notes
+      description: Describe how to reproduce outputs deterministically and reconcile totals against publisher summaries.
+    validations:
+      required: true
