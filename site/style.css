@@ -687,6 +687,41 @@ input[type="search"] {
   color: var(--crimson);
 }
 
+/* Embedded video player (article & share kit) */
+.article-video-embed,
+.share-video-box {
+  margin: 1.75rem 0 2rem;
+  padding: 1.25rem 1.35rem 1.35rem;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-top: 4px solid var(--crimson);
+  border-radius: 0.45rem;
+}
+
+.video-player {
+  display: block;
+  width: 100%;
+  max-width: 34rem;
+  margin: 0.9rem auto 1rem;
+  border-radius: 0.4rem;
+  background: #0d1117;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+.video-meta p {
+  font-size: 0.94rem;
+  color: var(--ink-muted);
+  margin: 0 0 0.75rem;
+}
+
+.video-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+  margin-bottom: 0;
+}
+
 [hidden] {
   display: none !important;
 }

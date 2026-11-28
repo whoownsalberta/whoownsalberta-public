@@ -1072,8 +1072,15 @@
         }
       ],
       "platform": "facebook",
-      "summary": "Download the 5 verified 1080×1080 satirical comic panels and copy the ready-to-post Facebook caption and First Comment backed by 23 primary statutory and budget records.",
-      "title": "Share Bill 44 on Facebook — 5-Panel Comic Kit (File #02)"
+      "summary": "Watch or download the 95-second noir video explainer ('The Machine Alberta Built in Six Years'), grab all 5 verified 1080×1080 comic panels, and copy ready-to-post Facebook captions backed by 27 primary statutory and budget records.",
+      "title": "Share Bill 44 on Facebook — 95-Second Video + 5-Panel Comic Kit (File #02)",
+      "video": {
+        "duration": "1:35",
+        "filename": "bill44-architecture-of-control.mp4",
+        "poster_filename": "bill44-architecture-of-control-poster.jpg",
+        "summary": "A 95-second primary-record look at how six years of Alberta laws expanded policing, detention, and data powers in open statute while shifting custody-death inquiries and privacy limits into unpublished Cabinet rules—plus the safeguards Bill 44 leaves intact.",
+        "title": "The Machine Alberta Built in Six Years (Bill 44 · 2020–2026)"
+      }
     },
     {
       "article_id": "dynalife-lab-privatization",

@@ -3,17 +3,17 @@
     "factual:dynalife-community-lab-contract": "cb2609dd5f3497c3f1119ee1b81fcefa64cadd1c28caeb0e4f7b7ca6037457f9",
     "factual:provincial-police-bill-44-and-accountability": "45cd7af42c531927d717c4e538d8185cfc606f46cd95018a620a5ebe2a04fd0f",
     "publication:dynalife-community-lab-contract": "fbcec2566a2de3f3ee074c6295a8ee2903b07e07ad0391ea1507781f0a412f56",
-    "publication:provincial-police-bill-44-and-accountability": "163b07cd7b90eec5a3eb1ad1b27d68cd5c97ed03dbf33241b59f8cd699e5898d",
-    "renderer:wiki-v1-renderer": "e3635407159781963afdb0eebf496868940728e49f267ce8e51b48b8f4f2064b"
+    "publication:provincial-police-bill-44-and-accountability": "899f270428b224b8af2312dbc9362ec29ac307337aed13937302996154b3f1d0",
+    "renderer:wiki-v1-renderer": "61223d8233b9512852cc7ea78a8dee2a14725aeb072f2ae3286e0e24c7a47099"
   },
   "mode": "public",
   "output_digests": {
-    "articles/bill-44-plain-english-guide.html": "fa844790547e973f870fa59d3f93e0da5ee79087e4c94ccba0f86e81a01c3c91",
+    "articles/bill-44-plain-english-guide.html": "00f831b35fc26ab2d9a001c31758d44ab9abe85617a06f8ff81a2fb077a7c24f",
     "articles/dynalife-lab-privatization.html": "e740f3d1ec4478f6823ef26b666f7a60bb922111c107288a3274b965b917ae25",
     "articles/provincial-police-bill-44-accountability.html": "c2dbd51a7ca096ea4ae09d713de4297075fcfcc1515d132d743ec1bfa3913600",
     "data/entries.csv": "a80105882ea25d455241f14ed142f9d080f9b1edbc335891696b80c2686162d7",
     "data/sources.csv": "5c43b3d6e3c89ee7a063bb9277700e9304bc6cb5bab26da43cd1e5b359fc8ab1",
-    "data/wiki.json": "d37277be3263499dab0e5057ac027e3d61ca1fe60f64657a0a071f9875ec0519",
+    "data/wiki.json": "e0c6193b17f37ff92f5949cd91615e42f6d0e2f7b3b39ce859fc4001ad55778b",
     "entries/b44-claim-crown-corp-repeal.html": "e21b9240293ca98cf1dd31692026cfd8a9afe520a78a0cf88a9a58e6aa5aa082",
     "entries/b44-claim-expanded-powers-timeline.html": "7a2bd61eb6189c0602e3b510ca3f25fe173daf381dde3c9f534893ead53bbfbe",
     "entries/b44-claim-fatality-mandatory-repeal.html": "8f860d47b21d1086473ab6942039e99f1a9368a58cc0e3de4d83688044d334d3",
@@ -39,7 +39,7 @@
     "entries/dynalife-claim-rfp-counteraccount.html": "7a4bd5f413b1e47c0690e101acfe5a5dc0b1f06f15b0e02e772f8b97454b5038",
     "entries/dynalife-lead-gross-payments-and-payees.html": "96774ad346d345a82d5851fdc4f37bc83d184b66c8f21ac1cb14c234a41fc930",
     "entries/dynalife-note-109m-reconciliation.html": "947c14f8f01d2bb3cf0102759c5518c2962c8a40f0a2a5357ec82a68df3d05f5",
-    "index.html": "4c371e3bab16cf0edb8baa4c72af9a55107ac3351b2291221f47f7cb2cb82e70",
+    "index.html": "c90287419d4dc7974c2b65593d8ec09da25af719718b7008a3f6d801e5e1d01d",
     "og-card.jpg": "07d54094ba71d2b05fa2b34ae438817afd16a83d98e3273fb3e813b63345dfae",
     "search.html": "6c7e4cd4207c0579f6a8c645c4422e557dfff8e81c9015935177fc736cba788d",
     "share/assets/01-bill44-comic-cover.png": "0d93170a08a7520b1a7987380e789f0be28005781f6d7986382803479823aacc",
@@ -52,7 +52,9 @@
     "share/assets/04-dynalife-comic-panel-3.png": "3709ae410f0c6e796d287ebcda93cdf3ba52de415055b1c6983b83995cdfa494",
     "share/assets/05-bill44-comic-panel-4.png": "af247f265a085525074c3fd71190981a74c55209ce00c6f50bf151e6e329efd4",
     "share/assets/05-dynalife-comic-panel-4.png": "5be4bcfb690cae0400a92a08d4644617134a726fa56aa137c218f744ee9732c9",
-    "share/bill-44-facebook-kit.html": "f598e506e90fcd4527a69cc8aea4268adc82ec1d9ede0edb35b8ddb21b279239",
+    "share/assets/bill44-architecture-of-control-poster.jpg": "99a1c9f94236df36e3a768c19f9c24d2501db5e5e0c4cdab890c83cb7638fab6",
+    "share/assets/bill44-architecture-of-control.mp4": "a875a8d7daa72ec81dbd95936c2593418eb2142a3133ffc6d9e11aaf240d2600",
+    "share/bill-44-facebook-kit.html": "6bfdb7de1534f3c0919ca14541034d0b6b9cea23bc7173fbf0ba3aacc726d91d",
     "share/dynalife-facebook-kit.html": "92a18653852e7a06b62a5b37cb96212f81d7ce4139efe9989b1edb8a0448f722",
     "sources/b44-src-alberta-next-2025.html": "97331804962df403e6e5befdb9d084a97bef6158c704a0527420e48dde199446",
     "sources/b44-src-bc-coroners-act.html": "f5fed83297592af4b460c3fecc7332da658e42bd00bb5a40de8f93f5339b3bd1",
@@ -91,7 +93,7 @@
     "sources/dynalife-source-oag-hospital-nov26.html": "623fda8a1b19b5f38f797e81364809d1b41b8cb037e9b052cf5bbe4e67b5991d",
     "sources/dynalife-source-oag-primary-nov26.html": "ef8a398eba6d8099012ed61440c2f34b532417e5955a2867198538b5a1d755a8",
     "sources/dynalife-source-pac-nov26.html": "93f81e05c02c131cc44f24ac6e3ad4fbd7a7c8cef916827a9ac06a8bb1497144",
-    "style.css": "9ac28db15513afd3e32f3b353ac1a8869fc50f436899820e6ece88a2b9deb2aa",
+    "style.css": "dd396b822ff515add50629a19960985969d4141c57897635d13b194f74769bd7",
     "topics/dynalife-decision-and-oversight.html": "3b6477b61434d26fecb8cd85321e6a506aab33ff69622fb95c068f02bb56839f",
     "topics/dynalife-money-trail.html": "2bcb77b87cb4145d09971b9f34a953244baa9986ab69137f31a71b596c7bb81f",
     "topics/dynalife-open-questions.html": "c23a7c7c96c421e046210f5cc434153ab35d17e5f2f12c804d098aa6d049be1e",
@@ -100,7 +102,7 @@
     "topics/provincial-police-costs-and-mandate.html": "a4dc894e591882244f470c006d5f9eb3dc4b4b3b8c321ca5f1977ec99f33b2ce"
   },
   "profile": "wiki-v1-site",
-  "renderer_digest": "681642ee639729fff59c9252e59f45da7de012492ea963a7a565c05b9e625fdf",
+  "renderer_digest": "ae6cdf42cd7d5072f0134d84ff99f67f7f87869b2ad4f3f85458f8f61c61682f",
   "scopes": [
     {
       "factual_digest": "93b64ba71fefeb33dcd56bfa43530a3c8f79f288d623fbdde179304079b5aed9",
@@ -109,7 +111,7 @@
     },
     {
       "factual_digest": "8ce441b22ccfbbc108035bb47018613b95a15847998061cec1c5c851e32709ee",
-      "publication_digest": "745f2d0e2361bacfe50f9ade312632c28cc05c4850299f4826eadf74c5d84a9d",
+      "publication_digest": "e86b78169a4a3bbcee8b68dfc1d84b62370c4db422b1a0af482396f53e56b830",
       "scope_id": "provincial-police-bill-44-and-accountability"
     }
   ]
