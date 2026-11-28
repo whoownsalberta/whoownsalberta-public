@@ -284,6 +284,23 @@ class WikiV1MultiTopicSiteTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "non-public mode"):
             verify_site(self.site)
 
+    def test_mp4_share_asset_valid_and_corrupt_rejected(self):
+        mp4 = self.site / "share/assets/alpha-video.mp4"
+        mp4.write_bytes(b"\x00\x00\x00\x18ftypisom\x00\x00\x02\x00isommp41")
+        self.manifest["output_digests"]["share/assets/alpha-video.mp4"] = (
+            hashlib.sha256(mp4.read_bytes()).hexdigest()
+        )
+        self.save()
+        verify_site(self.site)
+
+        mp4.write_bytes(b"NOT_A_VALID_MP4_PAYLOAD")
+        self.manifest["output_digests"]["share/assets/alpha-video.mp4"] = (
+            hashlib.sha256(mp4.read_bytes()).hexdigest()
+        )
+        self.save()
+        with self.assertRaisesRegex(ValueError, "invalid MP4 video"):
+            verify_site(self.site)
+
 
 class VerifyPublicV1Tests(unittest.TestCase):
     def setUp(self):

@@ -13,7 +13,7 @@ ARTICLE = re.compile(r"articles/[a-z][a-z0-9]*(?:-[a-z0-9]+)*\.html\Z")
 WIKI_FILE = re.compile(
     r"(?:index|search)\.html\Z|style\.css\Z|og-card\.jpg\Z|"
     r"data/(?:wiki\.json|entries\.csv|sources\.csv)\Z|"
-    r"share/assets/[a-z0-9][a-z0-9-]*\.(?:png|jpg)\Z|"
+    r"share/assets/[a-z0-9][a-z0-9-]*\.(?:png|jpg|mp4)\Z|"
     r"(?:articles|topics|entries|sources|share)/[a-z][a-z0-9]*(?:-[a-z0-9]+)*\.html\Z"
 )
 WIKI_DIRS = {"articles", "topics", "entries", "sources", "data", "share", "share/assets"}
@@ -166,6 +166,8 @@ def verify_wiki_v1(site, found, dirs, manifest):
                 fail(f"invalid JPEG image: {name}")
             if name.endswith(".png") and not raw.startswith(b"\x89PNG\r\n\x1a\n"):
                 fail(f"invalid PNG image: {name}")
+            if name.endswith(".mp4") and (len(raw) < 12 or raw[4:8] != b"ftyp"):
+                fail(f"invalid MP4 video: {name}")
             continue
         text = (site / name).read_text(encoding="utf-8")
         for marker in FORBIDDEN_MARKERS:
